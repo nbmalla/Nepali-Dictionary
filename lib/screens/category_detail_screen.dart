@@ -56,6 +56,8 @@ class _CategoryDetailScreenState extends State<CategoryDetailScreen> {
                 return KnowledgeCard(item: item);
               }
               return PhraseFlipCard(
+                categoryId: widget.categoryId,
+                index: index,
                 item: item,
                 known: ProgressStore.instance.isKnown(widget.categoryId, index),
                 onToggleKnown: () => ProgressStore.instance.toggle(widget.categoryId, index),

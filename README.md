@@ -10,7 +10,7 @@
 
 - **フレーズカード**: 日本語(ローマ字付き)⇄ネパール語訳をタップでフリップ
 - **知識カード**: 作法・文化などの読み物形式コンテンツ
-- **🔊 発音読み上げ**: 日本語フレーズをその場で音声再生([flutter_tts](https://pub.dev/packages/flutter_tts))
+- **🔊 発音読み上げ**: 日本語フレーズをその場で音声再生。録音済み音声([audioplayers](https://pub.dev/packages/audioplayers))があればそれを優先し、なければ端末/ブラウザのTTS([flutter_tts](https://pub.dev/packages/flutter_tts))に自動フォールバック
 - **練習モード**: フレーズをスワイプ形式で繰り返し学習、「わかった/もう一度」で習熟管理
 - **進捗保存**: 覚えたフレーズをローカルに記録([shared_preferences](https://pub.dev/packages/shared_preferences))
 - **検索・今日のフレーズ**: ホーム画面でカテゴリー横断検索、日替わりフレーズ表示
@@ -24,6 +24,7 @@ lib/
   data/lesson_categories.dart    カテゴリー一覧(id・アイコン・表示順・和訳/ネ訳ラベル)
   data/lesson_items_data.dart    全カテゴリーのコンテンツ本体
   services/tts_service.dart      flutter_tts ラッパー(日本語読み上げ)
+  services/audio_service.dart    録音ファイル優先・TTSフォールバックの発音再生
   state/app_settings.dart        UI言語・文字サイズ・読み上げ速度(永続化)
   state/progress_store.dart      「覚えた」進捗の永続化
   widgets/phrase_flip_card.dart  フレーズカード(フリップ演出)
@@ -44,5 +45,6 @@ flutter build web          # 本番ビルド (build/web に出力)
 
 ## 補足
 
-- 音声読み上げは日本語フレーズ(`primary`)のみ対応。ブラウザ/OS内蔵の音声合成エンジンを利用するため追加費用は発生しない。ネパール語(`meaning`)側の読み上げは対応ブラウザが少ないため未対応(将来的にクラウドTTSでの対応を検討)。
+- 音声読み上げは日本語フレーズ(`primary`)のみ対応。ネパール語(`meaning`)側の読み上げは対応ブラウザが少ないため未対応(将来的にクラウドTTSでの対応を検討)。
 - コンテンツはすべて `lib/data/lesson_items_data.dart` に集約。新しいカテゴリーを追加する場合は `lib/data/lesson_categories.dart` にもエントリを追加すること。
+- **自分の声で発音を差し替える**: `assets/audio/README.md` を参照。`assets/audio/<categoryId>/<index>.mp3` にファイルを置くだけで、コード変更なしにそのフレーズの発音が録音済み音声に切り替わる(TTSの発音が不自然/間違っている場合の対処法)。

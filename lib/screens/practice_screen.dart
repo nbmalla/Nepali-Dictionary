@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../data/lesson_categories.dart';
 import '../data/lesson_items_data.dart';
 import '../models/lesson_item.dart';
-import '../services/tts_service.dart';
+import '../services/audio_service.dart';
 import '../state/app_settings.dart';
 import '../state/progress_store.dart';
 
@@ -94,7 +94,9 @@ class _PracticeScreenState extends State<PracticeScreen> {
                                     primary: item.primary,
                                     secondary: item.romaji,
                                     background: Theme.of(context).colorScheme.primaryContainer,
-                                    onSpeak: () => TtsService.instance.speak(
+                                    onSpeak: () => AudioService.instance.speak(
+                                      widget.categoryId,
+                                      _queue.first,
                                       item.primary,
                                       rate: AppSettings.instance.speechRate,
                                     ),

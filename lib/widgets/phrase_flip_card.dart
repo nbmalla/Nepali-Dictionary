@@ -1,19 +1,23 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import '../models/lesson_item.dart';
-import '../services/tts_service.dart';
+import '../services/audio_service.dart';
 import '../state/app_settings.dart';
 
 /// A tappable card for a single phrase-kind [LessonItem]: front shows the
 /// Japanese phrase + romaji, back shows the Nepali meaning + note. Tapping
 /// anywhere on the card flips it with a 3D rotation.
 class PhraseFlipCard extends StatefulWidget {
+  final String categoryId;
+  final int index;
   final LessonItem item;
   final bool known;
   final VoidCallback onToggleKnown;
 
   const PhraseFlipCard({
     super.key,
+    required this.categoryId,
+    required this.index,
     required this.item,
     required this.known,
     required this.onToggleKnown,
@@ -96,7 +100,9 @@ class _PhraseFlipCardState extends State<PhraseFlipCard>
               IconButton(
                 icon: const Icon(Icons.volume_up_rounded),
                 tooltip: '発音を聞く',
-                onPressed: () => TtsService.instance.speak(
+                onPressed: () => AudioService.instance.speak(
+                  widget.categoryId,
+                  widget.index,
                   widget.item.primary,
                   rate: AppSettings.instance.speechRate,
                 ),
