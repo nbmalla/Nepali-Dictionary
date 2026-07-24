@@ -91,7 +91,7 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
       note: 'तेज बोलिएको बेला प्रयोग',
     ),
     LessonItem(
-      primary: 'これは何ですか',
+      primary: 'これはなんですか',
       romaji: 'Kore wa nan desu ka',
       meaning: 'यो के हो?',
       note: 'कुनै वस्तु/चिन्ह नबुझेमा',
