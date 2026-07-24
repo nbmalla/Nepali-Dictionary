@@ -1,41 +1,45 @@
 import 'package:flutter/material.dart';
-import '../data/lesson_categories.dart';
-import '../data/lesson_items_data.dart';
 import '../models/lesson_item.dart';
 import '../services/audio_service.dart';
 import '../state/app_settings.dart';
 import '../state/progress_store.dart';
+import '../theme/app_theme.dart';
 
-/// Sequential "swipe through" practice mode over the phrase-kind items of
-/// one category. "わかった" marks the card known and drops it from the
+/// One phrase queued for a practice session, tagged with its origin
+/// category/index so progress can be recorded correctly even when a
+/// session mixes items from several categories (cross-category review).
+class PracticeEntry {
+  final String categoryId;
+  final int index;
+  final LessonItem item;
+  const PracticeEntry({required this.categoryId, required this.index, required this.item});
+}
+
+/// Sequential "swipe through" practice/quiz session over a fixed list of
+/// [PracticeEntry]. "わかった" marks the card known and drops it from the
 /// queue; "もう一度" sends it to the back of the queue for another pass.
 class PracticeScreen extends StatefulWidget {
-  final String categoryId;
-  const PracticeScreen({super.key, required this.categoryId});
+  final String title;
+  final List<PracticeEntry> entries;
+
+  const PracticeScreen({super.key, required this.title, required this.entries});
 
   @override
   State<PracticeScreen> createState() => _PracticeScreenState();
 }
 
 class _PracticeScreenState extends State<PracticeScreen> {
-  late final List<int> _originalIndices;
-  late final List<LessonItem> _allItems;
-  late List<int> _queue;
+  late List<PracticeEntry> _queue;
   int _learnedCount = 0;
   bool _revealed = false;
 
   @override
   void initState() {
     super.initState();
-    _allItems = lessonItemsByCategory[widget.categoryId] ?? const <LessonItem>[];
-    _originalIndices = [
-      for (var i = 0; i < _allItems.length; i++)
-        if (_allItems[i].kind == ContentKind.phrase) i,
-    ];
-    _queue = List.of(_originalIndices);
+    _queue = List.of(widget.entries);
   }
 
-  LessonItem? get _current => _queue.isEmpty ? null : _allItems[_queue.first];
+  PracticeEntry? get _current => _queue.isEmpty ? null : _queue.first;
 
   void _again() {
     setState(() {
@@ -46,8 +50,8 @@ class _PracticeScreenState extends State<PracticeScreen> {
   }
 
   void _gotIt() {
-    final index = _queue.first;
-    ProgressStore.instance.markKnown(widget.categoryId, index);
+    final entry = _queue.first;
+    ProgressStore.instance.markKnown(entry.categoryId, entry.index);
     setState(() {
       _queue.removeAt(0);
       _learnedCount++;
@@ -57,22 +61,26 @@ class _PracticeScreenState extends State<PracticeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final category = lessonCategories.firstWhere((c) => c.id == widget.categoryId);
-    final item = _current;
+    final entry = _current;
 
     return Scaffold(
-      appBar: AppBar(title: Text('練習: ${category.jpLabel}')),
+      backgroundColor: AppColors.pageBackground(context),
+      appBar: AppBar(
+        backgroundColor: AppColors.pageBackground(context),
+        title: Text(widget.title),
+      ),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(20),
-          child: item == null
-              ? _SummaryView(learnedCount: _learnedCount, total: _originalIndices.length)
+          child: entry == null
+              ? _SummaryView(learnedCount: _learnedCount, total: widget.entries.length)
               : Column(
                   children: [
                     LinearProgressIndicator(
-                      value: _originalIndices.isEmpty
+                      value: widget.entries.isEmpty
                           ? 0
-                          : 1 - (_queue.length / (_originalIndices.length + _learnedCount).clamp(1, 1 << 30)),
+                          : 1 - (_queue.length / (widget.entries.length + _learnedCount).clamp(1, 1 << 30)),
+                      color: AppColors.progress,
                     ),
                     const SizedBox(height: 8),
                     Text('残り ${_queue.length} 枚 ・ わかった $_learnedCount 枚'),
@@ -85,19 +93,19 @@ class _PracticeScreenState extends State<PracticeScreen> {
                             child: _revealed
                                 ? _CardFace(
                                     key: const ValueKey('back'),
-                                    primary: item.meaning,
-                                    secondary: item.note,
+                                    primary: entry.item.meaning,
+                                    secondary: entry.item.note,
                                     background: Theme.of(context).colorScheme.secondaryContainer,
                                   )
                                 : _CardFace(
                                     key: const ValueKey('front'),
-                                    primary: item.primary,
-                                    secondary: item.romaji,
+                                    primary: entry.item.primary,
+                                    secondary: entry.item.romaji,
                                     background: Theme.of(context).colorScheme.primaryContainer,
                                     onSpeak: () => AudioService.instance.speak(
-                                      widget.categoryId,
-                                      _queue.first,
-                                      item.primary,
+                                      entry.categoryId,
+                                      entry.index,
+                                      entry.item.primary,
                                       rate: AppSettings.instance.speechRate,
                                     ),
                                   ),
@@ -188,11 +196,11 @@ class _SummaryView extends StatelessWidget {
           const SizedBox(height: 12),
           Text('お疲れさまでした！', style: Theme.of(context).textTheme.headlineSmall),
           const SizedBox(height: 8),
-          Text('$total 枚中 $learnedCount 枚 わかった'),
+          Text(total == 0 ? '対象のフレーズがありませんでした' : '$total 枚中 $learnedCount 枚 わかった'),
           const SizedBox(height: 20),
           FilledButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: const Text('カテゴリーに戻る'),
+            child: const Text('戻る'),
           ),
         ],
       ),

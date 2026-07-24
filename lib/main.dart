@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/home_screen.dart';
+import 'screens/root_shell.dart';
 import 'state/app_settings.dart';
 import 'state/progress_store.dart';
 
@@ -39,7 +39,7 @@ class NepDictionaryApp extends StatelessWidget {
               child: child!,
             );
           },
-          home: const HomeScreen(),
+          home: const RootShell(),
         );
       },
     );
