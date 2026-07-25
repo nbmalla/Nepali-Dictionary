@@ -69,7 +69,11 @@ class _ListenModeScreenState extends State<ListenModeScreen> {
       backgroundColor: AppColors.pageBackground(context),
       appBar: AppBar(
         backgroundColor: AppColors.pageBackground(context),
-        title: Text('きく: ${category.jpLabel}'),
+        title: Text(
+          'きく (सुन्नुहोस्): ${category.jpLabel}',
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+        ),
         actions: [
           IconButton(
             icon: Icon(_autoplay ? Icons.repeat_on_outlined : Icons.repeat_outlined),

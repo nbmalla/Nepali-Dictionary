@@ -67,7 +67,7 @@ class _PracticeScreenState extends State<PracticeScreen> {
       backgroundColor: AppColors.pageBackground(context),
       appBar: AppBar(
         backgroundColor: AppColors.pageBackground(context),
-        title: Text(widget.title),
+        title: Text(widget.title, maxLines: 1, overflow: TextOverflow.ellipsis),
       ),
       body: SafeArea(
         child: Padding(

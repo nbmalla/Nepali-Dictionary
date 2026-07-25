@@ -98,7 +98,7 @@ class CategoryDetailScreen extends StatelessWidget {
                 Text('$known/$total 完了・全$total項目', style: theme.textTheme.labelSmall),
               ],
               const SizedBox(height: 20),
-              Text('モードを選ぶ', style: theme.textTheme.titleSmall),
+              Text('モードを選ぶ (मोड छान्नुहोस्)', style: theme.textTheme.titleSmall),
               const SizedBox(height: 10),
               GridView.count(
                 shrinkWrap: true,
@@ -106,11 +106,12 @@ class CategoryDetailScreen extends StatelessWidget {
                 crossAxisCount: 2,
                 mainAxisSpacing: 12,
                 crossAxisSpacing: 12,
-                childAspectRatio: 1.7,
+                childAspectRatio: 1.5,
                 children: [
                   _ModeTile(
                     icon: Icons.menu_book_outlined,
                     label: '学ぶ',
+                    neLabel: 'सिक्नुहोस्',
                     enabled: items.isNotEmpty,
                     onTap: () => Navigator.of(context).push(
                       MaterialPageRoute(builder: (_) => LearnModeScreen(categoryId: categoryId)),
@@ -119,6 +120,7 @@ class CategoryDetailScreen extends StatelessWidget {
                   _ModeTile(
                     icon: Icons.headphones_outlined,
                     label: 'きく',
+                    neLabel: 'सुन्नुहोस्',
                     enabled: hasPhrases,
                     onTap: () => Navigator.of(context).push(
                       MaterialPageRoute(builder: (_) => ListenModeScreen(categoryId: categoryId)),
@@ -127,11 +129,12 @@ class CategoryDetailScreen extends StatelessWidget {
                   _ModeTile(
                     icon: Icons.fact_check_outlined,
                     label: 'ためす',
+                    neLabel: 'अभ्यास गर्नुहोस्',
                     enabled: hasPhrases,
                     onTap: () => Navigator.of(context).push(
                       MaterialPageRoute(
                         builder: (_) => PracticeScreen(
-                          title: 'ためす: ${category.jpLabel}',
+                          title: 'ためす (अभ्यास): ${category.jpLabel}',
                           entries: _phraseEntries(),
                         ),
                       ),
@@ -140,11 +143,12 @@ class CategoryDetailScreen extends StatelessWidget {
                   _ModeTile(
                     icon: Icons.replay_outlined,
                     label: 'ふくしゅう',
+                    neLabel: 'दोहोऱ्याउनुहोस्',
                     enabled: hasPhrases,
                     onTap: () => Navigator.of(context).push(
                       MaterialPageRoute(
                         builder: (_) => PracticeScreen(
-                          title: 'ふくしゅう: ${category.jpLabel}',
+                          title: 'ふくしゅう (दोहोऱ्याउनुहोस्): ${category.jpLabel}',
                           entries: _phraseEntries(onlyNotKnown: true),
                         ),
                       ),
@@ -180,13 +184,21 @@ class CategoryDetailScreen extends StatelessWidget {
 class _ModeTile extends StatelessWidget {
   final IconData icon;
   final String label;
+  final String neLabel;
   final bool enabled;
   final VoidCallback onTap;
 
-  const _ModeTile({required this.icon, required this.label, required this.enabled, required this.onTap});
+  const _ModeTile({
+    required this.icon,
+    required this.label,
+    required this.neLabel,
+    required this.enabled,
+    required this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Material(
       color: AppColors.cardBackground(context),
       borderRadius: BorderRadius.circular(16),
@@ -195,13 +207,28 @@ class _ModeTile extends StatelessWidget {
         onTap: enabled ? onTap : null,
         child: Opacity(
           opacity: enabled ? 1 : 0.4,
-          child: Center(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8),
             child: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
                 Icon(icon, size: 20, color: AppColors.badgeIcon(context)),
                 const SizedBox(width: 8),
-                Text(label, style: Theme.of(context).textTheme.titleMedium),
+                Flexible(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(label, style: theme.textTheme.titleMedium, maxLines: 1, overflow: TextOverflow.ellipsis),
+                      Text(
+                        neLabel,
+                        style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.primary),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),

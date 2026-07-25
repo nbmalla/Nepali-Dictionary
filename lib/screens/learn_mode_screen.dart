@@ -22,7 +22,11 @@ class LearnModeScreen extends StatelessWidget {
       backgroundColor: AppColors.pageBackground(context),
       appBar: AppBar(
         backgroundColor: AppColors.pageBackground(context),
-        title: Text('学ぶ: ${category.jpLabel}'),
+        title: Text(
+          '学ぶ (सिक्नुहोस्): ${category.jpLabel}',
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+        ),
       ),
       body: AnimatedBuilder(
         animation: ProgressStore.instance,
