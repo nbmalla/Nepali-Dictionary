@@ -66,7 +66,7 @@ class _CategoryGridScreenState extends State<CategoryGridScreen> {
                   physics: const NeverScrollableScrollPhysics(),
                   gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
                     maxCrossAxisExtent: 220,
-                    mainAxisExtent: 148,
+                    mainAxisExtent: 168,
                     crossAxisSpacing: 14,
                     mainAxisSpacing: 14,
                   ),
@@ -140,6 +140,14 @@ class _CategoryCard extends StatelessWidget {
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: theme.textTheme.titleSmall,
+              ),
+              Text(
+                category.neLabel,
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: theme.colorScheme.primary,
+                ),
               ),
               if (total > 0) ...[
                 const SizedBox(height: 6),

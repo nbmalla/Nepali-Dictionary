@@ -71,6 +71,12 @@ class CategoryDetailScreen extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(category.jpLabel, style: theme.textTheme.titleLarge),
+                        Text(
+                          category.neLabel,
+                          style: theme.textTheme.bodyMedium?.copyWith(
+                            color: theme.colorScheme.primary,
+                          ),
+                        ),
                         Text(category.subtitle, style: theme.textTheme.bodySmall),
                       ],
                     ),
