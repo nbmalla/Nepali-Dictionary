@@ -47,19 +47,19 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
     LessonItem(
       primary: 'どうぞよろしくお願いします',
       romaji: 'Douzo yoroshiku onegaishimasu',
-      meaning: 'राम्रोसँग व्यवहार गर्नुहोला',
+      meaning: 'धेरै धेरै धन्यवाद र साथसाथै मेरो लागि सहयोग गर्नुहोस्',
       note: 'परिचयपछि झुकेर भन्ने अत्यन्त महत्त्वपूर्ण वाक्य',
     ),
     LessonItem(
       primary: 'ありがとうございます',
       romaji: 'Arigatou gozaimasu',
-      meaning: 'धन्यवाद',
+      meaning: 'धन्यवाद (औपचारिक)',
       note: 'जुनसुकै बेला प्रयोग हुने सम्मानित धन्यवाद',
     ),
     LessonItem(
       primary: 'さようなら／またね',
       romaji: 'Sayounara / Mata ne',
-      meaning: 'बिदा हुँदा — औपचारिक/अनौपचारिक',
+      meaning: 'बिदा हुँदा / छुट्टिंदा  — औपचारिक/अनौपचारिक',
       note: 'Sayounara=औपचारिक बिदाइ, Mata ne=साथीसँग फेरि भेटौँला',
     ),
   ],
@@ -88,13 +88,13 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
       primary: 'ゆっくり話してください',
       romaji: 'Yukkuri hanashite kudasai',
       meaning: 'बिस्तारै बोल्नुहोस्',
-      note: 'तेज बोलिएको बेला प्रयोग',
+      note: 'छिटोछिटो बोलिएको बेलामा प्रयोग',
     ),
     LessonItem(
       primary: 'これはなんですか',
       romaji: 'Kore wa nan desu ka',
       meaning: 'यो के हो?',
-      note: 'कुनै वस्तु/चिन्ह नबुझेमा',
+      note: 'कुनै चिज नबुझेमा',
     ),
     LessonItem(
       primary: '英語を話せますか',
@@ -106,7 +106,7 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
       primary: 'トイレはどこですか',
       romaji: 'Toire wa doko desu ka',
       meaning: 'शौचालय कहाँ छ?',
-      note: 'अत्यन्त व्यावहारिक जीवन-रक्षक वाक्य',
+      note: 'अत्यन्त जरुरी व्यावहारिक वाक्य',
     ),
     LessonItem(
       primary: '助けてください',
@@ -128,13 +128,13 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
       kind: ContentKind.knowledge,
       primary: '玄関で靴を脱ぐ (Genkan)',
       meaning: 'घर, कतिपय रेस्टुरेन्ट, मन्दिरमा प्रवेश गर्दा जुत्ता फुकालिन्छ',
-      note: 'नियम नथाहा भए ठूलो असभ्यता ठानिन्छ',
+      note: 'यो नबुझ्दा ठूलो असभ्यता ठानिन्छ',
     ),
     LessonItem(
       kind: ContentKind.knowledge,
       primary: 'チップの習慣なし',
       meaning: 'जापानमा टिप दिने चलन छैन, दिँदा अप्ठ्यारो पर्न सक्छ',
-      note: 'नेपाली/पश्चिमी बानीभन्दा फरक — याद राख्नुपर्ने',
+      note: 'अन्य देशमा भन्दा फरक — याद राख्नुपर्ने',
     ),
     LessonItem(
       kind: ContentKind.knowledge,
@@ -203,13 +203,13 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
     LessonItem(
       kind: ContentKind.knowledge,
       primary: 'お通し (Otoshi)',
-      meaning: 'Izakaya (जापानी बार) मा नमगाई नै सानो खाजा र पैसा तिर्न पर्ने पनि हुन सक्छ',
+      meaning: 'Izakaya (जापानी बार) मा नमगाई नै आउने सानो खाजा र पैसा तिर्न पर्ने पनि हुन सक्छ',
       note: 'नयाँ आगन्तुकलाई अचम्म लाग्ने सामान्य कुरा',
     ),
     LessonItem(
       primary: '苦手な食べ物はありますか',
       romaji: 'Nigate na tabemono wa arimasu ka',
-      meaning: 'नमन पर्ने/नखाने खाना छ?',
+      meaning: 'मन न पर्ने/नखाने खाना छ?',
       note: 'रेस्टुरेन्ट वा घरमा खाना दिनुअघि सोधिने प्रश्न',
     ),
     LessonItem(
@@ -221,7 +221,7 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
       primary: '牛肉は食べません',
       romaji: 'Gyuuniku wa tabemasen',
       meaning: 'म गाईको मासु खाँदिन',
-      note: 'हिन्दू धर्मावलम्बीका लागि महत्त्वपूर्ण वाक्य — मेनुमा 牛肉/ビーフ नलेखिएको बेला पनि सोसमा हुन सक्ने भएकाले सोध्नु राम्रो',
+      note: 'हिन्दू धर्मावलम्बीका लागि महत्त्वपूर्ण वाक्य — मेनुमा 牛肉/ビーフ नलेखिएको भए पनि अरु चिजमा हुन सक्ने भएकाले सोध्नु राम्रो',
     ),
     LessonItem(
       primary: '豚肉は食べません',
@@ -231,13 +231,13 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
     LessonItem(
       kind: ContentKind.knowledge,
       primary: 'ハラール (Haraaru)',
-      meaning: 'हलाल खाना — जापानमा भेट्टाउन अलि गाह्रो, हलाल-प्रमाणित रेस्टुरेन्ट/पसल खोज्नुपर्ने',
+      meaning: 'हलाल खाना — जापानमा पाउन अलि गाह्रो, हलाल-प्रमाणित रेस्टुरेन्ट/पसल खोज्नुपर्ने',
       note: 'ठूला शहरमा हलाल रेस्टुरेन्ट/स्टोर बढ्दै गएको छ',
     ),
     LessonItem(
       primary: 'お代わりできますか',
       romaji: 'Okawari dekimasu ka',
-      meaning: 'थप पाउन सक्छु?',
+      meaning: 'थप्न सकिन्छ की ?',
     ),
     LessonItem(
       primary: 'おいしいです',
@@ -271,11 +271,11 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
       note: 'भात नभएको काँचो माछाको टुक्रा',
     ),
     LessonItem(primary: 'パン', romaji: 'Pan', meaning: 'रोटी / ब्रेड'),
-    LessonItem(primary: 'カレーパン', romaji: 'Kareepan', meaning: 'करी भरिएको तारेको रोटी'),
+    LessonItem(primary: 'カレーパン', romaji: 'Kareepan', meaning: 'करी भरिएको ब्रेड'),
     LessonItem(
       primary: '抹茶',
       romaji: 'Matcha',
-      meaning: 'हरियो चिया धुलो — मिठाई, आइसक्रिम, पेयमा पनि प्रयोग हुन्छ',
+      meaning: 'ग्रिन टि को धुलो — मिठाई, आइसक्रिम, पेयमा पनि प्रयोग हुन्छ',
     ),
   ],
 
@@ -290,7 +290,7 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
     LessonItem(
       primary: '何名様ですか',
       romaji: 'Nan mei sama desu ka',
-      meaning: 'कतिजना हुनुहुन्छ?',
+      meaning: 'कति जना हुनुहुन्छ?',
     ),
     LessonItem(
       primary: 'メニューをお願いします',
@@ -322,7 +322,7 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
       primary: 'ごちそうさまでした',
       romaji: 'Gochisousama deshita',
       meaning: 'धन्यवाद, खाना मीठो थियो',
-      note: 'बाहिर जाँदा भन्ने',
+      note: 'रेस्टुराँ बाट बाहिर जाँदा भन्ने',
     ),
   ],
 
@@ -342,7 +342,7 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
     LessonItem(
       primary: '温めますか',
       romaji: 'Atatamemasu ka',
-      meaning: 'तताउने हो?',
+      meaning: 'तताउन पर्छ ?',
       note: 'स्टाफले  सोध्ने प्रश्न',
     ),
     LessonItem(
@@ -353,7 +353,7 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
     LessonItem(
       primary: '支払いは何になさいますか',
       romaji: 'Shiharai wa nani ni nasaimasu ka',
-      meaning: 'कसरी पैसा तिर्नुहुन्छ?',
+      meaning: 'बिल कसरी तिर्नु हुन्छ?',
     ),
     LessonItem(
       primary: 'カードでお願いします',
@@ -540,7 +540,7 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
     LessonItem(
       primary: '何番線ですか',
       romaji: 'Nanban-sen desu ka',
-      meaning: 'कतिनम्बर प्लेटफर्म हो?',
+      meaning: 'कति नम्बर प्लेटफर्म हो?',
     ),
     LessonItem(
       primary: '終電は何時ですか',
@@ -600,7 +600,7 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
     LessonItem(
       primary: 'お疲れ様でした',
       romaji: 'Otsukaresama deshita',
-      meaning: 'धेरै मेहनत गर्नुभयो',
+      meaning: 'तपाईंको कडा परिश्रमको लागि धन्यवाद।',
       note: 'सहकर्मीलाई जुनसुकै बेला भन्न सकिने सामान्य अभिवादन',
     ),
     LessonItem(
@@ -616,7 +616,7 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
     LessonItem(
       primary: '体調が悪いので休みます',
       romaji: 'Taichou ga warui node yasumimasu',
-      meaning: 'शरीर बिग्रेकोले आज बिदा बस्छु',
+      meaning: 'स्वस्थ नराम्रो (बिग्रेको)ले आज बिदा बस्छु',
       note: 'फोनबाट अफिसमा जानकारी दिँदा प्रयोग हुने वाक्य',
     ),
     LessonItem(
@@ -697,7 +697,7 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
     LessonItem(
       primary: 'よろしくお願いいたします',
       romaji: 'Yoroshiku onegai itashimasu',
-      meaning: 'राम्रोसँग व्यवहार गर्नुहोला',
+      meaning: 'धेरै धेरै धन्यवाद।',
       note: '面接の最後に言う、より丁寧な締めの一言',
     ),
     LessonItem(
@@ -737,7 +737,7 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
     LessonItem(
       kind: ContentKind.knowledge,
       primary: '転入届・転出届',
-      meaning: 'ठेगाना सर्दा नयाँ ठाउँमा १४ दिनभित्र दर्ता गर्नुपर्ने कानुनी प्रक्रिया',
+      meaning: 'बसाई सर्दा नयाँ ठाउँमा १४ दिनभित्र दर्ता गर्नुपर्ने कानुनी प्रक्रिया',
       note: 'नगरपालिका/सिटी अफिसमा गरिने',
     ),
     LessonItem(
@@ -840,7 +840,7 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
       kind: ContentKind.knowledge,
       primary: '給料明細 (Kyuuryou meisai)',
       meaning: 'तलब विवरण पर्चा — कति कट्टा भयो भन्ने कुरा बुझ्न महत्त्वपूर्ण',
-      note: 'हरेक महिना कम्पनीले दिने कागज, नराखी नफ्याल्नु',
+      note: 'हरेक महिना कम्पनीले दिने कागज, नफ्याल्नु',
     ),
     LessonItem(
       kind: ContentKind.knowledge,
@@ -944,7 +944,7 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
     LessonItem(
       primary: '今何時ですか',
       romaji: 'Ima nanji desu ka',
-      meaning: 'अहिले कति बजे?',
+      meaning: 'अहिले कति बज्यो ?',
     ),
     LessonItem(
       primary: '何時に会いましょうか',
@@ -1035,7 +1035,7 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
       primary: 'この住所はどこですか',
       romaji: 'Kono juusho wa doko desu ka',
       meaning: 'यो ठेगाना कहाँ हो?',
-      note: 'ट्याक्सी वा राहगीरलाई देखाएर सोध्दा उपयोगी',
+      note: 'ट्याक्सी वा कसैलाई देखाएर सोध्दा उपयोगी',
     ),
   ],
 
@@ -1055,12 +1055,12 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
     LessonItem(
       primary: '少々お待ちください',
       romaji: 'Shoushou omachi kudasai',
-      meaning: 'अलिकति पर्खनुहोस्',
+      meaning: 'एकछिन  पर्खनुहोस्',
     ),
     LessonItem(
       primary: '折り返しお電話します',
       romaji: 'Orikaeshi odenwa shimasu',
-      meaning: 'फर्केर फोन गर्छु',
+      meaning: 'म पछि फोन गर्छु',
       note: 'अहिले जवाफ दिन नसक्दा प्रयोग गरिने विनम्र वाक्य',
     ),
     LessonItem(
@@ -1172,7 +1172,7 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
     LessonItem(
       primary: 'もっと大きいサイズはありますか',
       romaji: 'Motto ookii saizu wa arimasu ka',
-      meaning: 'अझ ठूलो साइज छ?',
+      meaning: 'अझ ठूलो साइज छैन ?',
     ),
     LessonItem(
       primary: '色違いはありますか',
@@ -1207,7 +1207,7 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
     LessonItem(
       kind: ContentKind.knowledge,
       primary: '敷金・礼金 (Shikikin / Reikin)',
-      meaning: '敷金=फिर्ता हुने जमानती रकम, 礼金=फिर्ता नहुने धन्यवाद-रकम',
+      meaning: '敷金(सिकिकिन )=फिर्ता हुने जमानती रकम, 礼金(रेइकिन )=फिर्ता नहुने धन्यवाद-रकम',
       note: 'सुरुमा भाडाको ४-६ महिना बराबर एकमुष्ट रकम चाहिन सक्छ',
     ),
     LessonItem(
@@ -1225,12 +1225,12 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
       kind: ContentKind.knowledge,
       primary: '電気・ガス・水道の契約',
       meaning: 'बिजुली, ग्यास, पानी छुट्टाछुट्टै कम्पनीसँग आफैं साइन अप गर्नुपर्छ',
-      note: 'भाडामा सामेल नहुने खर्च, सर्ने बेलामै मिलाउनुपर्ने',
+      note: 'भाडामा सामेल नहुने खर्च, बसाइ सराइ को बेला मा मिलाउनुपर्ने',
     ),
     LessonItem(
       kind: ContentKind.knowledge,
       primary: '引っ越し業者 (Hikkoshi gyousha)',
-      meaning: 'सामान सार्ने कम्पनी, अगावै बुक गर्नुपर्ने र भारी/दूरी अनुसार मूल्य फरक हुने',
+      meaning: 'बसाइ सराइ को ढुवानी कम्पनी, अगावै बुक गर्नुपर्ने र भारी/दूरी अनुसार मूल्य फरक हुने',
     ),
     LessonItem(
       primary: 'いつ入居できますか',
@@ -1251,7 +1251,7 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
       kind: ContentKind.knowledge,
       primary: '避難所 (Hinanjo)',
       meaning: 'विपद्को बेला जाने सुरक्षित आश्रयस्थल, प्रायः स्थानीय स्कुल हुन्छ',
-      note: 'आफ्नो नजिकको避難所 पहिल्यै थाहा पाइराख्नु राम्रो',
+      note: 'आफ्नो नजिकको避難所(हिनान् ज्यो ) पहिल्यै थाहा पाइराख्नु राम्रो',
     ),
     LessonItem(
       kind: ContentKind.knowledge,
@@ -1334,7 +1334,7 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
     LessonItem(
       primary: '趣味は何ですか',
       romaji: 'Shumi wa nan desu ka',
-      meaning: 'तपाईंको शौक के हो?',
+      meaning: 'तपाईंको शौख के हो?',
     ),
     LessonItem(
       primary: '休みの日は何をしますか',
@@ -1366,13 +1366,13 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
     LessonItem(
       primary: 'そうですか',
       romaji: 'Sou desu ka',
-      meaning: 'अच्छा, त्यस्तो हो',
+      meaning: 'हो र ? , त्यस्तो हो',
       note: 'कुरा सुनिरहेको संकेत दिने महत्त्वपूर्ण प्रतिक्रिया शब्द (相槌)',
     ),
     LessonItem(
       primary: 'がんばってください',
       romaji: 'Ganbatte kudasai',
-      meaning: 'जाँगर गर्नुहोस् / शुभकामना',
+      meaning: 'जाँगर(कोशिस ) गर्नुहोस् / शुभकामना',
       note: 'जापानीहरूले धेरै बेला प्रोत्साहनको रूपमा प्रयोग गर्ने वाक्य',
     ),
   ],
