@@ -22,6 +22,31 @@ window.NepaliDictOcr = (function () {
     ]);
   }
 
+  function loadImage(dataUrl) {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      img.onload = () => resolve(img);
+      img.onerror = () => reject(new Error('image failed to decode'));
+      img.src = dataUrl;
+    });
+  }
+
+  // Downscales a data URL to at most maxDim on its longest side. Full-res
+  // phone photos otherwise make Tesseract very slow (or exhaust memory) on
+  // mobile browsers. Bounded by withTimeout; falls back to the original
+  // image (via the caller's catch) if decoding/drawing ever hangs or fails.
+  async function resizeDataUrl(dataUrl, maxDim) {
+    const img = await loadImage(dataUrl);
+    const scale = Math.min(1, maxDim / Math.max(img.width, img.height));
+    if (scale >= 1) return dataUrl;
+    const canvas = document.createElement('canvas');
+    canvas.width = Math.round(img.width * scale);
+    canvas.height = Math.round(img.height * scale);
+    const ctx = canvas.getContext('2d');
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    return canvas.toDataURL('image/jpeg', 0.85);
+  }
+
   function ensureKuroshiro() {
     if (!kuroshiroReadyPromise) {
       kuroshiroReadyPromise = withTimeout(
@@ -44,7 +69,14 @@ window.NepaliDictOcr = (function () {
   }
 
   async function recognizeAndRomanize(imageDataUrl) {
-    const result = await withTimeout(Tesseract.recognize(imageDataUrl, 'jpn'), 45000, 'OCR');
+    let ocrInput = imageDataUrl;
+    try {
+      ocrInput = await withTimeout(resizeDataUrl(imageDataUrl, 1600), 12000, 'image resize');
+    } catch (e) {
+      ocrInput = imageDataUrl; // fall back to the original photo
+    }
+
+    const result = await withTimeout(Tesseract.recognize(ocrInput, 'jpn'), 45000, 'OCR');
     const japanese = (result.data.text || '').trim();
 
     let romaji = '';

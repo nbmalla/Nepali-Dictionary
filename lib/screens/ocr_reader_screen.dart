@@ -32,15 +32,11 @@ class _OcrReaderScreenState extends State<OcrReaderScreen> {
   Future<void> _pick(ImageSource source) async {
     XFile? file;
     try {
-      // Downscale before OCR: a full-resolution phone photo can take Tesseract
-      // a very long time (or exhaust memory) to process in the browser, which
-      // reads as the app "freezing".
-      file = await _picker.pickImage(
-        source: source,
-        imageQuality: 85,
-        maxWidth: 1600,
-        maxHeight: 1600,
-      );
+      // Note: resizing is done on the JS side (with its own timeout) instead
+      // of via image_picker's maxWidth/maxHeight — that option runs a canvas
+      // resize inside the plugin that isn't timeout-bound and has been known
+      // to hang on large iOS Safari photos.
+      file = await _picker.pickImage(source: source, imageQuality: 85);
     } catch (e) {
       setState(() => _error = '画像を取得できませんでした / फोटो लिन सकिएन: $e');
       return;
