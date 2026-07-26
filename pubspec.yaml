@@ -64,8 +64,41 @@ flutter:
 
   # Recorded human-voice pronunciations, added by the app maintainer.
   # See lib/services/audio_service.dart and assets/audio/README.md.
+  #
+  # IMPORTANT: Flutter's folder asset declarations are NOT recursive — listing
+  # "assets/audio/" only includes files directly inside it (e.g. README.md),
+  # not files inside its subfolders. Every category subfolder under
+  # assets/audio/ must be listed here explicitly, or its recordings will be
+  # silently excluded from the build (and the app will silently fall back to
+  # TTS for that whole category, with no error). Add a new line here whenever
+  # a new assets/audio/<categoryId>/ folder is created.
   assets:
     - assets/audio/
+    - assets/audio/beauty_clothes/
+    - assets/audio/city_office/
+    - assets/audio/culture/
+    - assets/audio/daily_life/
+    - assets/audio/directions/
+    - assets/audio/disaster/
+    - assets/audio/emergency_phrases/
+    - assets/audio/food_names/
+    - assets/audio/greetings/
+    - assets/audio/health/
+    - assets/audio/job_interview/
+    - assets/audio/manners/
+    - assets/audio/meal_basics/
+    - assets/audio/moving/
+    - assets/audio/numbers_money/
+    - assets/audio/phone_email/
+    - assets/audio/restaurant_order/
+    - assets/audio/salary_tax/
+    - assets/audio/school/
+    - assets/audio/shopping_convenience/
+    - assets/audio/small_talk/
+    - assets/audio/time_date/
+    - assets/audio/transportation/
+    - assets/audio/weather_seasons/
+    - assets/audio/workplace/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
