@@ -1645,6 +1645,27 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
     LessonItem(primary: '石鹸 (せっけん)', romaji: 'Sekken', meaning: 'साबुन', note: '名詞 (संज्ञा)'),
     LessonItem(primary: 'タオル', romaji: 'Taoru', meaning: 'तौलिया', note: '名詞 (संज्ञा)'),
     LessonItem(primary: '鏡 (かがみ)', romaji: 'Kagami', meaning: 'ऐना', note: '名詞 (संज्ञा)'),
+
+    // 職業・建物 (पेशा/भवन / occupations & buildings)
+    LessonItem(primary: '店員 (てんいん)', romaji: "Ten'in", meaning: 'पसल कर्मचारी', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '運転手 (うんてんしゅ)', romaji: 'Untenshu', meaning: 'चालक', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '主婦 (しゅふ)', romaji: 'Shufu', meaning: 'गृहिणी', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '社長 (しゃちょう)', romaji: 'Shachou', meaning: 'कम्पनी अध्यक्ष', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '船 (ふね)', romaji: 'Fune', meaning: 'डुङ्गा / जहाज', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '地下鉄 (ちかてつ)', romaji: 'Chikatetsu', meaning: 'मेट्रो / भूमिगत रेल', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '大使館 (たいしかん)', romaji: 'Taishikan', meaning: 'दूतावास', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '交番 (こうばん)', romaji: 'Kouban', meaning: 'प्रहरी चौकी', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '教会 (きょうかい)', romaji: 'Kyoukai', meaning: 'चर्च', note: '名詞 (संज्ञा)'),
+
+    // 学校の種類 (विद्यालयका प्रकार / types of school)
+    LessonItem(primary: '大学 (だいがく)', romaji: 'Daigaku', meaning: 'विश्वविद्यालय', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '中学校 (ちゅうがっこう)', romaji: 'Chuugakkou', meaning: 'निम्न माध्यमिक विद्यालय', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '小学校 (しょうがっこう)', romaji: 'Shougakkou', meaning: 'प्राथमिक विद्यालय', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '高校 (こうこう)', romaji: 'Koukou', meaning: 'माध्यमिक विद्यालय (हाई स्कूल)', note: '名詞 (संज्ञा)'),
+
+    // 家電 (घरायसी उपकरण / home appliances)
+    LessonItem(primary: 'エアコン', romaji: 'Eakon', meaning: 'एयर कन्डिसनर', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '掃除機 (そうじき)', romaji: 'Soujiki', meaning: 'भ्याकुम क्लिनर', note: '名詞 (संज्ञा)'),
   ],
 
   // 28. JLPT N5 語彙: 動詞 --------------------------------------------------
@@ -1882,6 +1903,29 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
     LessonItem(primary: '出す (だす)', romaji: 'Dasu', meaning: 'निकाल्नु / बुझाउनु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 出します — 他動詞(「出る」の対)'),
     LessonItem(primary: '生きる (いきる)', romaji: 'Ikiru', meaning: 'बाँच्नु', note: '動詞 (क्रिया)・グループ2(る-verb) / ます形: 生きます'),
     LessonItem(primary: '起こす (おこす)', romaji: 'Okosu', meaning: 'ब्युँझाउनु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 起こします — 他動詞(「起きる」の対)'),
+
+    // 動詞 (क्रिया / more verbs)
+    LessonItem(primary: '連絡する (れんらくする)', romaji: 'Renraku suru', meaning: 'सम्पर्क गर्नु', note: '動詞 (क्रिया)・グループ3(不規則) / ます形: 連絡します'),
+    LessonItem(primary: '質問する (しつもんする)', romaji: 'Shitsumon suru', meaning: 'प्रश्न सोध्नु', note: '動詞 (क्रिया)・グループ3(不規則) / ます形: 質問します'),
+    LessonItem(primary: '返す (かえす)', romaji: 'Kaesu', meaning: 'फिर्ता गर्नु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 返します'),
+    LessonItem(primary: '届く (とどく)', romaji: 'Todoku', meaning: 'पुग्नु / आइपुग्नु (चिठी/सामान)', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 届きます — 自動詞'),
+    LessonItem(primary: '届ける (とどける)', romaji: 'Todokeru', meaning: 'पुर्‍याइदिनु', note: '動詞 (क्रिया)・グループ2(る-verb) / ます形: 届けます — 他動詞'),
+    LessonItem(primary: 'なくす', romaji: 'Nakusu', meaning: 'हराउनु (सामान)', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: なくします'),
+    LessonItem(primary: '気をつける (きをつける)', romaji: 'Ki o tsukeru', meaning: 'सावधान हुनु', note: '動詞 (क्रिया)・グループ2(る-verb) / ます形: 気をつけます'),
+    LessonItem(primary: '間違える (まちがえる)', romaji: 'Machigaeru', meaning: 'गल्ती गर्नु', note: '動詞 (क्रिया)・グループ2(る-verb) / ます形: 間違えます'),
+    LessonItem(primary: '直る (なおる)', romaji: 'Naoru', meaning: 'मर्मत हुनु / ठीक हुनु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 直ります — 自動詞(「直す」の対)'),
+    LessonItem(
+      primary: '治る (なおる)',
+      romaji: 'Naoru',
+      meaning: 'निको हुनु (रोग)',
+      note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 治ります — 「直る」と発音同じ、意味が違う',
+    ),
+    LessonItem(primary: '慣れる (なれる)', romaji: 'Nareru', meaning: 'बानी पर्नु', note: '動詞 (क्रिया)・グループ2(る-verb) / ます形: 慣れます'),
+    LessonItem(primary: '頼む (たのむ)', romaji: 'Tanomu', meaning: 'अनुरोध गर्नु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 頼みます'),
+    LessonItem(primary: '断る (ことわる)', romaji: 'Kotowaru', meaning: 'अस्वीकार गर्नु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 断ります'),
+    LessonItem(primary: '謝る (あやまる)', romaji: 'Ayamaru', meaning: 'माफी माग्नु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 謝ります'),
+    LessonItem(primary: '曇る (くもる)', romaji: 'Kumoru', meaning: 'बादल लाग्नु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 曇ります'),
+    LessonItem(primary: '晴れる (はれる)', romaji: 'Hareru', meaning: 'घाम लाग्नु / खुल्नु (मौसम)', note: '動詞 (क्रिया)・グループ2(る-verb) / ます形: 晴れます'),
   ],
 
   // 29. JLPT N5 語彙: 形容詞 ------------------------------------------------
@@ -1978,6 +2022,12 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
     LessonItem(primary: '自由 (じゆう)', romaji: 'Jiyuu', meaning: 'स्वतन्त्र', note: 'な形容詞 (विशेषण)'),
     LessonItem(primary: '特別 (とくべつ)', romaji: 'Tokubetsu', meaning: 'विशेष', note: 'な形容詞 (विशेषण)'),
     LessonItem(primary: '普通 (ふつう)', romaji: 'Futsuu', meaning: 'सामान्य', note: 'な形容詞 (विशेषण)'),
+
+    // 形容詞 (विशेषण / a few more adjectives)
+    LessonItem(primary: 'うるさい', romaji: 'Urusai', meaning: 'हल्लाखल्ला भएको / कर्कश', note: 'い形容詞 (विशेषण)'),
+    LessonItem(primary: 'すごい', romaji: 'Sugoi', meaning: 'अद्भुत / एकदमै (कजुअल)', note: 'い形容詞 (विशेषण)'),
+    LessonItem(primary: '不便 (ふべん)', romaji: 'Fuben', meaning: 'असुविधाजनक', note: 'な形容詞 (विशेषण) — 「便利」の反対'),
+    LessonItem(primary: '真面目 (まじめ)', romaji: 'Majime', meaning: 'इमान्दार / मेहनती', note: 'な形容詞 (विशेषण)'),
   ],
 
   // 30. JLPT N5 語彙: 代名詞・副詞・接続詞・疑問詞 ----------------------------
@@ -2034,6 +2084,12 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
     LessonItem(primary: 'どれ', romaji: 'Dore', meaning: 'कुन (तीन वा बढीमध्ये)', note: '代名詞 (सर्वनाम)'),
     LessonItem(primary: 'みんな', romaji: 'Minna', meaning: 'सबैजना', note: '代名詞 (सर्वनाम)'),
     LessonItem(primary: '自分 (じぶん)', romaji: 'Jibun', meaning: 'आफैं', note: '代名詞 (सर्वनाम)'),
+
+    // 副詞 (क्रियाविशेषण / a few more adverbs)
+    LessonItem(primary: 'やはり/やっぱり', romaji: 'Yahari / Yappari', meaning: 'जस्तो सोचेको थिएँ नै / फेरि पनि', note: '副詞 (क्रियाविशेषण)'),
+    LessonItem(primary: 'たぶん', romaji: 'Tabun', meaning: 'सायद', note: '副詞 (क्रियाविशेषण)'),
+    LessonItem(primary: 'きっと', romaji: 'Kitto', meaning: 'निश्चय नै', note: '副詞 (क्रियाविशेषण)'),
+    LessonItem(primary: 'もし', romaji: 'Moshi', meaning: 'यदि', note: '副詞 (क्रियाविशेषण)'),
   ],
 };
 
