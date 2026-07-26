@@ -16,7 +16,7 @@ window.NepaliDictOcr = (function () {
         const analyzer = new KuromojiAnalyzer({
           dictPath: 'https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict/',
         });
-        const k = new Kuroshiro.default();
+        const k = new Kuroshiro();
         await k.init(analyzer);
         kuroshiroInstance = k;
       })();
