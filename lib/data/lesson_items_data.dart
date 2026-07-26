@@ -1496,6 +1496,27 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
     LessonItem(primary: '四日 (よっか)', romaji: 'Yokka', meaning: '४ तारिख', note: '名詞 (संज्ञा) — 不規則な読み方'),
     LessonItem(primary: '五日 (いつか)', romaji: 'Itsuka', meaning: '५ तारिख', note: '名詞 (संज्ञा) — 不規則な読み方'),
     LessonItem(primary: '六日 (むいか)', romaji: 'Muika', meaning: '६ तारिख', note: '名詞 (संज्ञा) — 不規則な読み方'),
+
+    // 体・気持ち (शरीर/भावना / body & feelings — general terms)
+    LessonItem(primary: '体 (からだ)', romaji: 'Karada', meaning: 'शरीर (सामान्य शब्द)', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '心 (こころ)', romaji: 'Kokoro', meaning: 'मन / हृदय', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '気持ち (きもち)', romaji: 'Kimochi', meaning: 'भावना', note: '名詞 (संज्ञा)'),
+
+    // 自然 (थप प्रकृति / more nature)
+    LessonItem(primary: '火 (ひ)', romaji: 'Hi', meaning: 'आगो', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '水道 (すいどう)', romaji: 'Suidou', meaning: 'धारा पानी / पानी सेवा', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '電池 (でんち)', romaji: 'Denchi', meaning: 'ब्याट्री', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '空気 (くうき)', romaji: 'Kuuki', meaning: 'हावा (वायु)', note: '名詞 (संज्ञा)'),
+
+    // 家族 (थप परिवार / more family)
+    LessonItem(primary: '両親 (りょうしん)', romaji: 'Ryoushin', meaning: 'आमाबुबा', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '息子 (むすこ)', romaji: 'Musuko', meaning: 'छोरो', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '娘 (むすめ)', romaji: 'Musume', meaning: 'छोरी', note: '名詞 (संज्ञा)'),
+
+    // 数量・時間 (परिमाण/समय / quantity & time)
+    LessonItem(primary: '半分 (はんぶん)', romaji: 'Hanbun', meaning: 'आधा', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '時々 (ときどき)', romaji: 'Tokidoki', meaning: 'कहिलेकाहीं', note: '副詞 (क्रियाविशेषण)'),
+    LessonItem(primary: '今度 (こんど)', romaji: 'Kondo', meaning: 'यसपटक / अर्कोपटक', note: '名詞 (संज्ञा)'),
   ],
 
   // 27. JLPT N5 語彙: 名詞②(後半) -----------------------------------------
@@ -1926,6 +1947,14 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
     LessonItem(primary: '謝る (あやまる)', romaji: 'Ayamaru', meaning: 'माफी माग्नु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 謝ります'),
     LessonItem(primary: '曇る (くもる)', romaji: 'Kumoru', meaning: 'बादल लाग्नु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 曇ります'),
     LessonItem(primary: '晴れる (はれる)', romaji: 'Hareru', meaning: 'घाम लाग्नु / खुल्नु (मौसम)', note: '動詞 (क्रिया)・グループ2(る-verb) / ます形: 晴れます'),
+
+    // 動詞 (क्रिया / more verbs)
+    LessonItem(primary: '運転する (うんてんする)', romaji: 'Unten suru', meaning: 'गाडी चलाउनु', note: '動詞 (क्रिया)・グループ3(不規則) / ます形: 運転します'),
+    LessonItem(primary: '案内する (あんないする)', romaji: 'Annai suru', meaning: 'मार्गदर्शन गर्नु', note: '動詞 (क्रिया)・グループ3(不規則) / ます形: 案内します'),
+    LessonItem(primary: '確認する (かくにんする)', romaji: 'Kakunin suru', meaning: 'जाँच गर्नु / पुष्टि गर्नु', note: '動詞 (क्रिया)・グループ3(不規則) / ます形: 確認します'),
+    LessonItem(primary: '説明する (せつめいする)', romaji: 'Setsumei suru', meaning: 'व्याख्या गर्नु', note: '動詞 (क्रिया)・グループ3(不規則) / ます形: 説明します'),
+    LessonItem(primary: '着く (つく)', romaji: 'Tsuku', meaning: 'पुग्नु (गन्तव्यमा)', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 着きます'),
+    LessonItem(primary: '出発する (しゅっぱつする)', romaji: 'Shuppatsu suru', meaning: 'प्रस्थान गर्नु', note: '動詞 (क्रिया)・グループ3(不規則) / ます形: 出発します'),
   ],
 
   // 29. JLPT N5 語彙: 形容詞 ------------------------------------------------
@@ -2028,6 +2057,8 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
     LessonItem(primary: 'すごい', romaji: 'Sugoi', meaning: 'अद्भुत / एकदमै (कजुअल)', note: 'い形容詞 (विशेषण)'),
     LessonItem(primary: '不便 (ふべん)', romaji: 'Fuben', meaning: 'असुविधाजनक', note: 'な形容詞 (विशेषण) — 「便利」の反対'),
     LessonItem(primary: '真面目 (まじめ)', romaji: 'Majime', meaning: 'इमान्दार / मेहनती', note: 'な形容詞 (विशेषण)'),
+    LessonItem(primary: '近い (ちかい)', romaji: 'Chikai', meaning: 'नजिकको (विशेषण रूप)', note: 'い形容詞 (विशेषण)'),
+    LessonItem(primary: '遠い (とおい)', romaji: 'Tooi', meaning: 'टाढाको (विशेषण रूप)', note: 'い形容詞 (विशेषण)'),
   ],
 
   // 30. JLPT N5 語彙: 代名詞・副詞・接続詞・疑問詞 ----------------------------
@@ -2090,6 +2121,7 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
     LessonItem(primary: 'たぶん', romaji: 'Tabun', meaning: 'सायद', note: '副詞 (क्रियाविशेषण)'),
     LessonItem(primary: 'きっと', romaji: 'Kitto', meaning: 'निश्चय नै', note: '副詞 (क्रियाविशेषण)'),
     LessonItem(primary: 'もし', romaji: 'Moshi', meaning: 'यदि', note: '副詞 (क्रियाविशेषण)'),
+    LessonItem(primary: 'どうも', romaji: 'Doumo', meaning: 'धेरै धन्यवाद / एकदम (छोटो अभिवादन)', note: '副詞'),
   ],
 };
 
