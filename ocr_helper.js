@@ -29,21 +29,45 @@ window.NepaliDictOcr = (function () {
     const japanese = (result.data.text || '').trim();
 
     let romaji = '';
+    let hiragana = '';
     let romajiError = '';
     if (japanese) {
       try {
         await ensureKuroshiro();
-        romaji = await kuroshiroInstance.convert(japanese, {
-          to: 'romaji',
-          mode: 'spaced',
-          romajiSystem: 'hepburn',
-        });
       } catch (e) {
-        romajiError = String((e && e.message) || e);
+        romajiError = 'kuroshiro init: ' + String((e && e.message) || e);
+      }
+
+      if (!romajiError) {
+        // Try hiragana too: it's the simplest conversion path (no romaji
+        // table lookup), so if this also comes back empty with no error,
+        // the input itself (e.g. garbled OCR output) is the problem, not
+        // the romaji conversion specifically.
+        try {
+          hiragana = await kuroshiroInstance.convert(japanese, { to: 'hiragana', mode: 'normal' });
+        } catch (e) {
+          romajiError = 'hiragana convert: ' + String((e && e.message) || e);
+        }
+
+        try {
+          romaji = await kuroshiroInstance.convert(japanese, {
+            to: 'romaji',
+            mode: 'spaced',
+            romajiSystem: 'hepburn',
+          });
+        } catch (e) {
+          const msg = 'romaji convert: ' + String((e && e.message) || e);
+          romajiError = romajiError ? romajiError + ' | ' + msg : msg;
+        }
       }
     }
 
-    return JSON.stringify({ japanese: japanese, romaji: romaji, romajiError: romajiError });
+    return JSON.stringify({
+      japanese: japanese,
+      romaji: romaji,
+      hiragana: hiragana,
+      romajiError: romajiError,
+    });
   }
 
   return { recognizeAndRomanize: recognizeAndRomanize };
