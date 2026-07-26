@@ -5,9 +5,15 @@ import 'dart:js_interop';
 class OcrResult {
   final String japanese;
   final String romaji;
+  final String hiragana;
   final String? romajiError;
 
-  const OcrResult({required this.japanese, required this.romaji, this.romajiError});
+  const OcrResult({
+    required this.japanese,
+    required this.romaji,
+    required this.hiragana,
+    this.romajiError,
+  });
 }
 
 @JS('NepaliDictOcr.recognizeAndRomanize')
@@ -28,6 +34,7 @@ class OcrService {
     return OcrResult(
       japanese: map['japanese'] as String? ?? '',
       romaji: map['romaji'] as String? ?? '',
+      hiragana: map['hiragana'] as String? ?? '',
       romajiError: (romajiError == null || romajiError.isEmpty) ? null : romajiError,
     );
   }

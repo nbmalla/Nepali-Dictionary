@@ -152,6 +152,13 @@ class _OcrReaderScreenState extends State<OcrReaderScreen> {
                       style: theme.textTheme.titleMedium,
                     ),
                     const SizedBox(height: 14),
+                    Text('ひらがな / हिरागाना', style: theme.textTheme.labelMedium),
+                    const SizedBox(height: 6),
+                    SelectableText(
+                      _result!.hiragana.isEmpty ? '(変換できませんでした)' : _result!.hiragana,
+                      style: theme.textTheme.bodyLarge,
+                    ),
+                    const SizedBox(height: 14),
                     Text('ローマ字 / रोमाजी', style: theme.textTheme.labelMedium),
                     const SizedBox(height: 6),
                     SelectableText(
