@@ -1699,6 +1699,89 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
     LessonItem(primary: '酸っぱい (すっぱい)', romaji: 'Suppai', meaning: 'अमिलो', note: 'い形容詞 (विशेषण)'),
     LessonItem(primary: '苦い (にがい)', romaji: 'Nigai', meaning: 'तीतो', note: 'い形容詞 (विशेषण)'),
     LessonItem(primary: 'まずい', romaji: 'Mazui', meaning: 'अमीठो', note: 'い形容詞 (विशेषण)'),
+
+    // 日付の読み方 (मितिको पढाइ / date readings — irregular, high-value for N5)
+    LessonItem(primary: '一日 (ついたち)', romaji: 'Tsuitachi', meaning: '१ तारिख', note: '名詞 (संज्ञा) — 不規則な読み方'),
+    LessonItem(primary: '二日 (ふつか)', romaji: 'Futsuka', meaning: '२ तारिख', note: '名詞 (संज्ञा) — 不規則な読み方'),
+    LessonItem(primary: '三日 (みっか)', romaji: 'Mikka', meaning: '३ तारिख', note: '名詞 (संज्ञा) — 不規則な読み方'),
+    LessonItem(primary: '四日 (よっか)', romaji: 'Yokka', meaning: '४ तारिख', note: '名詞 (संज्ञा) — 不規則な読み方'),
+    LessonItem(primary: '五日 (いつか)', romaji: 'Itsuka', meaning: '५ तारिख', note: '名詞 (संज्ञा) — 不規則な読み方'),
+    LessonItem(primary: '六日 (むいか)', romaji: 'Muika', meaning: '६ तारिख', note: '名詞 (संज्ञा) — 不規則な読み方'),
+    LessonItem(primary: '七日 (なのか)', romaji: 'Nanoka', meaning: '७ तारिख', note: '名詞 (संज्ञा) — 不規則な読み方'),
+    LessonItem(primary: '八日 (ようか)', romaji: 'Youka', meaning: '८ तारिख', note: '名詞 (संज्ञा) — 不規則な読み方'),
+    LessonItem(primary: '九日 (ここのか)', romaji: 'Kokonoka', meaning: '९ तारिख', note: '名詞 (संज्ञा) — 不規則な読み方'),
+    LessonItem(primary: '十日 (とおか)', romaji: 'Tooka', meaning: '१० तारिख', note: '名詞 (संज्ञा) — 不規則な読み方'),
+    LessonItem(primary: '二十日 (はつか)', romaji: 'Hatsuka', meaning: '२० तारिख', note: '名詞 (संज्ञा) — 不規則な読み方'),
+
+    // 助数詞 (गन्ती गर्ने शब्द / counters)
+    LessonItem(primary: '一つ (ひとつ)', romaji: 'Hitotsu', meaning: 'एउटा', note: '助数詞 (संज्ञा) — もの一般を数える'),
+    LessonItem(primary: '二つ (ふたつ)', romaji: 'Futatsu', meaning: 'दुइटा', note: '助数詞 (संज्ञा)'),
+    LessonItem(primary: '三つ (みっつ)', romaji: 'Mittsu', meaning: 'तीनवटा', note: '助数詞 (संज्ञा)'),
+    LessonItem(primary: '四つ (よっつ)', romaji: 'Yottsu', meaning: 'चारवटा', note: '助数詞 (संज्ञा)'),
+    LessonItem(primary: '五つ (いつつ)', romaji: 'Itsutsu', meaning: 'पाँचवटा', note: '助数詞 (संज्ञा)'),
+    LessonItem(primary: '六つ (むっつ)', romaji: 'Muttsu', meaning: 'छवटा', note: '助数詞 (संज्ञा)'),
+    LessonItem(primary: '七つ (ななつ)', romaji: 'Nanatsu', meaning: 'सातवटा', note: '助数詞 (संज्ञा)'),
+    LessonItem(primary: '八つ (やっつ)', romaji: 'Yattsu', meaning: 'आठवटा', note: '助数詞 (संज्ञा)'),
+    LessonItem(primary: '九つ (ここのつ)', romaji: 'Kokonotsu', meaning: 'नौवटा', note: '助数詞 (संज्ञा)'),
+    LessonItem(primary: '十 (とお)', romaji: 'Too', meaning: 'दशवटा', note: '助数詞 (संज्ञा)'),
+    LessonItem(primary: '一人 (ひとり)', romaji: 'Hitori', meaning: 'एक जना', note: '助数詞 (संज्ञा) — 不規則な読み方'),
+    LessonItem(primary: '二人 (ふたり)', romaji: 'Futari', meaning: 'दुई जना', note: '助数詞 (संज्ञा) — 不規則な読み方'),
+
+    // 曜日 (बार / days of the week)
+    LessonItem(primary: '月曜日 (げつようび)', romaji: 'Getsuyoubi', meaning: 'सोमबार', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '火曜日 (かようび)', romaji: 'Kayoubi', meaning: 'मंगलबार', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '水曜日 (すいようび)', romaji: 'Suiyoubi', meaning: 'बुधबार', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '木曜日 (もくようび)', romaji: 'Mokuyoubi', meaning: 'बिहिबार', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '金曜日 (きんようび)', romaji: 'Kinyoubi', meaning: 'शुक्रबार', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '土曜日 (どようび)', romaji: 'Doyoubi', meaning: 'शनिबार', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '日曜日 (にちようび)', romaji: 'Nichiyoubi', meaning: 'आइतबार', note: '名詞 (संज्ञा)'),
+
+    // 季節 (ऋतु / seasons)
+    LessonItem(primary: '春 (はる)', romaji: 'Haru', meaning: 'वसन्त ऋतु', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '夏 (なつ)', romaji: 'Natsu', meaning: 'गर्मी ऋतु', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '秋 (あき)', romaji: 'Aki', meaning: 'शरद ऋतु', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '冬 (ふゆ)', romaji: 'Fuyu', meaning: 'जाडो ऋतु', note: '名詞 (संज्ञा)'),
+
+    // 外来語 (लोनवर्ड / loanwords)
+    LessonItem(primary: 'テーブル', romaji: 'Teeburu', meaning: 'टेबल', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: 'ホテル', romaji: 'Hoteru', meaning: 'होटल', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: 'レストラン', romaji: 'Resutoran', meaning: 'रेस्टुरेन्ट', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: 'トイレ', romaji: 'Toire', meaning: 'शौचालय', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: 'エレベーター', romaji: 'Erebeetaa', meaning: 'लिफ्ट', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: 'コンビニ', romaji: 'Konbini', meaning: 'कन्भिनियन्स स्टोर', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: 'パソコン', romaji: 'Pasokon', meaning: 'कम्प्युटर', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: 'ラジオ', romaji: 'Rajio', meaning: 'रेडियो', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: 'カメラ', romaji: 'Kamera', meaning: 'क्यामेरा', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: 'チケット', romaji: 'Chiketto', meaning: 'टिकट', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: 'アパート', romaji: 'Apaato', meaning: 'एपार्टमेन्ट/फ्ल्याट', note: '名詞 (संज्ञा)'),
+
+    // 疑問詞 (प्रश्नवाचक शब्द / question words)
+    LessonItem(primary: 'どう', romaji: 'Dou', meaning: 'कसरी', note: '副詞 (क्रियाविशेषण)'),
+    LessonItem(primary: 'どうして', romaji: 'Doushite', meaning: 'किन', note: '接続詞・副詞 — 「なぜ」も同じ意味'),
+    LessonItem(primary: 'いくつ', romaji: 'Ikutsu', meaning: 'कति (वटा)', note: '代名詞 (सर्वनाम)'),
+    LessonItem(primary: 'いくら', romaji: 'Ikura', meaning: 'कति (मूल्य)', note: '代名詞 (सर्वनाम)'),
+    LessonItem(primary: 'どちら', romaji: 'Dochira', meaning: 'कुन (दुईमध्ये/आदरार्थी)', note: '代名詞 (सर्वनाम)'),
+    LessonItem(primary: 'どんな', romaji: 'Donna', meaning: 'कस्तो', note: '連体詞 — どんな人 (कस्तो मान्छे)'),
+
+    // 動詞 (क्रिया / more verbs)
+    LessonItem(primary: '会う (あう)', romaji: 'Au', meaning: 'भेट्नु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 会います'),
+    LessonItem(primary: '持つ (もつ)', romaji: 'Motsu', meaning: 'समाउनु / राख्नु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 持ちます'),
+    LessonItem(primary: '忘れる (わすれる)', romaji: 'Wasureru', meaning: 'बिर्सनु', note: '動詞 (क्रिया)・グループ2(る-verb) / ます形: 忘れます'),
+    LessonItem(primary: '思う (おもう)', romaji: 'Omou', meaning: 'सोच्नु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 思います'),
+    LessonItem(primary: '言う (いう)', romaji: 'Iu', meaning: 'भन्नु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 言います'),
+    LessonItem(primary: '疲れる (つかれる)', romaji: 'Tsukareru', meaning: 'थाक्नु', note: '動詞 (क्रिया)・グループ2(る-verb) / ます形: 疲れます'),
+    LessonItem(primary: '手伝う (てつだう)', romaji: 'Tetsudau', meaning: 'सघाउनु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 手伝います'),
+    LessonItem(primary: '続ける (つづける)', romaji: 'Tsuzukeru', meaning: 'जारी राख्नु', note: '動詞 (क्रिया)・グループ2(る-verb) / ます形: 続けます'),
+    LessonItem(primary: '始める (はじめる)', romaji: 'Hajimeru', meaning: 'सुरु गर्नु', note: '動詞 (क्रिया)・グループ2(る-verb) / ます形: 始めます'),
+    LessonItem(primary: '終わる (おわる)', romaji: 'Owaru', meaning: 'सकिनु / समाप्त हुनु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 終わります'),
+    LessonItem(
+      primary: '帰る (かえる)',
+      romaji: 'Kaeru',
+      meaning: 'फर्कनु (घर)',
+      note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 帰ります — 形はる-verbっぽいが例外的にグループ1',
+    ),
+    LessonItem(primary: '乗る (のる)', romaji: 'Noru', meaning: 'चढ्नु (सवारीमा)', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 乗ります'),
+    LessonItem(primary: '降りる (おりる)', romaji: 'Oriru', meaning: 'ओर्लनु', note: '動詞 (क्रिया)・グループ2(る-verb) / ます形: 降ります'),
   ],
 };
 
