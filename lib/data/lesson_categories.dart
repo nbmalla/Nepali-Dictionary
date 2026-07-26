@@ -44,4 +44,5 @@ const List<LessonCategory> lessonCategories = [
   LessonCategory(id: 'weather_seasons', icon: Icons.wb_sunny_outlined, jpLabel: '天気・季節のあいさつ', neLabel: 'मौसम/ऋतु चाडपर्व', subtitle: '天気の話・年中行事'),
   LessonCategory(id: 'daily_life', icon: Icons.checklist_outlined, jpLabel: '生活でよくある場面', neLabel: 'दैनिक जीवनका दृश्य', subtitle: 'ゴミ出し・銀行・郵便'),
   LessonCategory(id: 'disaster', icon: Icons.warning_amber_outlined, jpLabel: '災害・緊急時対応', neLabel: 'विपद्/आपतकालीन', subtitle: '地震・避難・119番'),
+  LessonCategory(id: 'jlpt_n5_vocab', icon: Icons.translate_outlined, jpLabel: 'JLPT N5 語彙', neLabel: 'JLPT N5 शब्दावली', subtitle: '名詞・動詞・形容詞の基礎単語'),
 ];

@@ -1376,6 +1376,97 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
       note: 'जापानीहरूले धेरै बेला प्रोत्साहनको रूपमा प्रयोग गर्ने वाक्य',
     ),
   ],
+
+  // 26. JLPT N5 語彙 (trial batch — vocabulary, more to follow) ----------------
+  'jlpt_n5_vocab': const [
+    // 名詞 (संज्ञा / nouns)
+    LessonItem(primary: '学校 (がっこう)', romaji: 'Gakkou', meaning: 'विद्यालय', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '先生 (せんせい)', romaji: 'Sensei', meaning: 'शिक्षक/शिक्षिका', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '学生 (がくせい)', romaji: 'Gakusei', meaning: 'विद्यार्थी', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '友達 (ともだち)', romaji: 'Tomodachi', meaning: 'साथी', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '家族 (かぞく)', romaji: 'Kazoku', meaning: 'परिवार', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '部屋 (へや)', romaji: 'Heya', meaning: 'कोठा', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '本 (ほん)', romaji: 'Hon', meaning: 'किताब', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '天気 (てんき)', romaji: 'Tenki', meaning: 'मौसम', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '音楽 (おんがく)', romaji: 'Ongaku', meaning: 'संगीत', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '映画 (えいが)', romaji: 'Eiga', meaning: 'चलचित्र (फिल्म)', note: '名詞 (संज्ञा)'),
+
+    // 動詞 (क्रिया / verbs, dictionary form — ます形 in note)
+    LessonItem(
+      primary: '食べる (たべる)',
+      romaji: 'Taberu',
+      meaning: 'खानु',
+      note: '動詞・グループ2(る-verb) / ます形: 食べます',
+    ),
+    LessonItem(
+      primary: '飲む (のむ)',
+      romaji: 'Nomu',
+      meaning: 'पिउनु',
+      note: '動詞・グループ1(う-verb) / ます形: 飲みます',
+    ),
+    LessonItem(
+      primary: '行く (いく)',
+      romaji: 'Iku',
+      meaning: 'जानु',
+      note: '動詞・グループ1(う-verb) / ます形: 行きます',
+    ),
+    LessonItem(
+      primary: '来る (くる)',
+      romaji: 'Kuru',
+      meaning: 'आउनु',
+      note: '動詞・グループ3(不規則) / ます形: 来ます',
+    ),
+    LessonItem(
+      primary: '見る (みる)',
+      romaji: 'Miru',
+      meaning: 'हेर्नु',
+      note: '動詞・グループ2(る-verb) / ます形: 見ます',
+    ),
+    LessonItem(
+      primary: '聞く (きく)',
+      romaji: 'Kiku',
+      meaning: 'सुन्नु',
+      note: '動詞・グループ1(う-verb) / ます形: 聞きます',
+    ),
+    LessonItem(
+      primary: '話す (はなす)',
+      romaji: 'Hanasu',
+      meaning: 'बोल्नु',
+      note: '動詞・グループ1(う-verb) / ます形: 話します',
+    ),
+    LessonItem(
+      primary: '読む (よむ)',
+      romaji: 'Yomu',
+      meaning: 'पढ्नु',
+      note: '動詞・グループ1(う-verb) / ます形: 読みます',
+    ),
+    LessonItem(
+      primary: '書く (かく)',
+      romaji: 'Kaku',
+      meaning: 'लेख्नु',
+      note: '動詞・グループ1(う-verb) / ます形: 書きます',
+    ),
+    LessonItem(
+      primary: '買う (かう)',
+      romaji: 'Kau',
+      meaning: 'किन्नु',
+      note: '動詞・グループ1(う-verb) / ます形: 買います',
+    ),
+
+    // 形容詞 (विशेषण / adjectives)
+    LessonItem(primary: '大きい (おおきい)', romaji: 'Ookii', meaning: 'ठूलो', note: 'い形容詞'),
+    LessonItem(primary: '小さい (ちいさい)', romaji: 'Chiisai', meaning: 'सानो', note: 'い形容詞'),
+    LessonItem(primary: '新しい (あたらしい)', romaji: 'Atarashii', meaning: 'नयाँ', note: 'い形容詞'),
+    LessonItem(primary: '古い (ふるい)', romaji: 'Furui', meaning: 'पुरानो', note: 'い形容詞'),
+    LessonItem(primary: '忙しい (いそがしい)', romaji: 'Isogashii', meaning: 'व्यस्त', note: 'い形容詞'),
+    LessonItem(primary: '難しい (むずかしい)', romaji: 'Muzukashii', meaning: 'गाह्रो', note: 'い形容詞'),
+    LessonItem(primary: '簡単 (かんたん)', romaji: 'Kantan', meaning: 'सजिलो', note: 'な形容詞'),
+
+    // 副詞 (क्रियाविशेषण / adverbs)
+    LessonItem(primary: '少し', romaji: 'Sukoshi', meaning: 'अलिकति', note: '副詞'),
+    LessonItem(primary: '全部', romaji: 'Zenbu', meaning: 'सबै/जम्मै', note: '副詞・名詞'),
+    LessonItem(primary: 'とても', romaji: 'Totemo', meaning: 'धेरै', note: '副詞'),
+  ],
 };
 
 /// Whether a category's content is knowledge-based (etiquette/culture)
