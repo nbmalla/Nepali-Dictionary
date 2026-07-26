@@ -44,5 +44,9 @@ const List<LessonCategory> lessonCategories = [
   LessonCategory(id: 'weather_seasons', icon: Icons.wb_sunny_outlined, jpLabel: '天気・季節のあいさつ', neLabel: 'मौसम/ऋतु चाडपर्व', subtitle: '天気の話・年中行事'),
   LessonCategory(id: 'daily_life', icon: Icons.checklist_outlined, jpLabel: '生活でよくある場面', neLabel: 'दैनिक जीवनका दृश्य', subtitle: 'ゴミ出し・銀行・郵便'),
   LessonCategory(id: 'disaster', icon: Icons.warning_amber_outlined, jpLabel: '災害・緊急時対応', neLabel: 'विपद्/आपतकालीन', subtitle: '地震・避難・119番'),
-  LessonCategory(id: 'jlpt_n5_vocab', icon: Icons.translate_outlined, jpLabel: 'JLPT N5 語彙', neLabel: 'JLPT N5 शब्दावली', subtitle: '名詞・動詞・形容詞の基礎単語'),
+  LessonCategory(id: 'jlpt_n5_nouns_1', icon: Icons.label_outline, jpLabel: 'JLPT N5 語彙:名詞①', neLabel: 'JLPT N5 शब्दावली: संज्ञा १', subtitle: '基礎名詞(前半)'),
+  LessonCategory(id: 'jlpt_n5_nouns_2', icon: Icons.category_outlined, jpLabel: 'JLPT N5 語彙:名詞②', neLabel: 'JLPT N5 शब्दावली: संज्ञा २', subtitle: '基礎名詞(後半)'),
+  LessonCategory(id: 'jlpt_n5_verbs', icon: Icons.directions_run_outlined, jpLabel: 'JLPT N5 語彙:動詞', neLabel: 'JLPT N5 शब्दावली: क्रिया', subtitle: 'グループ1・2・3の動詞'),
+  LessonCategory(id: 'jlpt_n5_adjectives', icon: Icons.palette_outlined, jpLabel: 'JLPT N5 語彙:形容詞', neLabel: 'JLPT N5 शब्दावली: विशेषण', subtitle: 'い形容詞・な形容詞'),
+  LessonCategory(id: 'jlpt_n5_other', icon: Icons.help_outline, jpLabel: 'JLPT N5 語彙:代名詞・副詞など', neLabel: 'JLPT N5 शब्दावली: सर्वनाम/क्रियाविशेषण आदि', subtitle: '代名詞・副詞・接続詞・疑問詞'),
 ];
