@@ -21,6 +21,13 @@ class AudioService {
 
   String _assetKey(String categoryId, int index) => 'assets/audio/$categoryId/$index.mp3';
 
+  // Strips "(reading)" annotations (e.g. "学校 (がっこう)") before handing text
+  // to TTS — otherwise the engine reads both the kanji and the reading in
+  // parentheses aloud, producing a doubled-up pronunciation.
+  String _stripParenthetical(String text) {
+    return text.replaceAll(RegExp(r'[\(（][^)）]*[\)）]'), '').trim();
+  }
+
   Future<void> speak(
     String categoryId,
     int index,
@@ -38,6 +45,6 @@ class AudioService {
         _knownMissing.add(key);
       }
     }
-    await TtsService.instance.speak(fallbackText, rate: rate);
+    await TtsService.instance.speak(_stripParenthetical(fallbackText), rate: rate);
   }
 }
