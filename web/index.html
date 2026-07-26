@@ -31,6 +31,17 @@
 
   <title>nepali_dictionary</title>
   <link rel="manifest" href="manifest.json">
+
+  <!--
+    Client-side OCR + romanization for the "カメラで読む" feature.
+    All three run entirely in the browser (no server, no API key), so this
+    stays compatible with the free GitHub Pages hosting. See web/ocr_helper.js
+    and lib/services/ocr_service.dart.
+  -->
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/kuroshiro@1.1.2/dist/kuroshiro.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/kuroshiro-analyzer-kuromoji@1.1.0/dist/kuroshiro-analyzer-kuromoji.min.js"></script>
+  <script src="ocr_helper.js"></script>
 </head>
 <body>
   <!--

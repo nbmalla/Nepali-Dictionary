@@ -6,6 +6,7 @@ import '../state/progress_store.dart';
 import '../theme/app_theme.dart';
 import 'category_detail_screen.dart';
 import 'category_grid_screen.dart';
+import 'ocr_reader_screen.dart';
 
 /// "ホーム" tab: today's phrase, overall progress, and quick shortcuts
 /// into a handful of categories.
@@ -52,6 +53,12 @@ class _DashboardScreenState extends State<DashboardScreen> {
               padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
               children: [
                 if (today != null) _TodaysPhraseCard(item: today),
+                const SizedBox(height: 14),
+                _OcrEntryCard(
+                  onTap: () => Navigator.of(context).push(
+                    MaterialPageRoute(builder: (_) => const OcrReaderScreen()),
+                  ),
+                ),
                 const SizedBox(height: 14),
                 const _OverallProgressCard(),
                 const SizedBox(height: 20),
@@ -127,6 +134,54 @@ class _TodaysPhraseCard extends StatelessWidget {
           const SizedBox(height: 4),
           Text(item.meaning, style: theme.textTheme.bodyMedium),
         ],
+      ),
+    );
+  }
+}
+
+class _OcrEntryCard extends StatelessWidget {
+  final VoidCallback onTap;
+  const _OcrEntryCard({required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Material(
+      color: AppColors.cardBackground(context),
+      borderRadius: BorderRadius.circular(18),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(18),
+        onTap: onTap,
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Row(
+            children: [
+              Container(
+                width: 44,
+                height: 44,
+                decoration: BoxDecoration(
+                  color: theme.colorScheme.primaryContainer,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Icon(Icons.photo_camera_outlined, color: theme.colorScheme.onPrimaryContainer),
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('カメラで読む', style: theme.textTheme.titleSmall),
+                    Text(
+                      'क्यामेराबाट पढ्नुहोस् — कान्जीको उच्चारण हेर्नुहोस्',
+                      style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.primary),
+                    ),
+                  ],
+                ),
+              ),
+              const Icon(Icons.chevron_right),
+            ],
+          ),
+        ),
       ),
     );
   }
