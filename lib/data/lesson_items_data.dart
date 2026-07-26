@@ -1782,6 +1782,98 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
     ),
     LessonItem(primary: '乗る (のる)', romaji: 'Noru', meaning: 'चढ्नु (सवारीमा)', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 乗ります'),
     LessonItem(primary: '降りる (おりる)', romaji: 'Oriru', meaning: 'ओर्लनु', note: '動詞 (क्रिया)・グループ2(る-verb) / ます形: 降ります'),
+
+    // 時間の単位 (समयको एकाइ / time units)
+    LessonItem(primary: '時 (じ)', romaji: 'Ji', meaning: 'बजे (घडीको समय)', note: '助数詞 (संज्ञा) — 三時 (तीन बजे)'),
+    LessonItem(primary: '分 (ふん/ぷん)', romaji: 'Fun / Pun', meaning: 'मिनेट', note: '助数詞 (संज्ञा) — 前の音により「ふん/ぷん」変化'),
+    LessonItem(primary: '時間 (じかん)', romaji: 'Jikan', meaning: 'घण्टा (अवधि)', note: '名詞・助数詞 (संज्ञा) — 二時間 (दुई घण्टा)'),
+    LessonItem(primary: '週間 (しゅうかん)', romaji: 'Shuukan', meaning: 'हप्ता (अवधि)', note: '助数詞 (संज्ञा) — 一週間 (एक हप्ता)'),
+    LessonItem(primary: 'ヶ月 (かげつ)', romaji: 'Kagetsu', meaning: 'महिना (अवधि)', note: '助数詞 (संज्ञा) — 三ヶ月 (तीन महिना)'),
+    LessonItem(primary: '年 (とし/ねん)', romaji: 'Toshi / Nen', meaning: 'वर्ष', note: '名詞・助数詞 (संज्ञा)'),
+
+    // 健康 (स्वास्थ्य / health)
+    LessonItem(primary: '病気 (びょうき)', romaji: 'Byouki', meaning: 'रोग / बिरामी', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '風邪 (かぜ)', romaji: 'Kaze', meaning: 'रुघाखोकी', note: '名詞 (संज्ञा) — 「風(かぜ)=हावा」सँग उच्चारण मिल्दोजुल्दो तर फरक शब्द'),
+    LessonItem(primary: '熱 (ねつ)', romaji: 'Netsu', meaning: 'ज्वरो', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '薬 (くすり)', romaji: 'Kusuri', meaning: 'औषधि', note: '名詞 (संज्ञा)'),
+
+    // 場所 (थप ठाउँ / more places)
+    LessonItem(primary: '家 (いえ)', romaji: 'Ie', meaning: 'घर', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '教室 (きょうしつ)', romaji: 'Kyoushitsu', meaning: 'कक्षाकोठा', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '国 (くに)', romaji: 'Kuni', meaning: 'देश', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '外国 (がいこく)', romaji: 'Gaikoku', meaning: 'विदेश', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '世界 (せかい)', romaji: 'Sekai', meaning: 'संसार', note: '名詞 (संज्ञा)'),
+
+    // 天気 (थप मौसम / more weather)
+    LessonItem(primary: '曇り (くもり)', romaji: 'Kumori', meaning: 'बादल लागेको', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '晴れ (はれ)', romaji: 'Hare', meaning: 'घाम लागेको', note: '名詞 (संज्ञा)'),
+
+    // 感覚 (इन्द्रिय / senses)
+    LessonItem(primary: '音 (おと)', romaji: 'Oto', meaning: 'आवाज (चिज/वस्तुको)', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '声 (こえ)', romaji: 'Koe', meaning: 'आवाज (मान्छे/जनावरको)', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '匂い (におい)', romaji: 'Nioi', meaning: 'गन्ध', note: '名詞 (संज्ञा)'),
+
+    // その他の名詞 (अन्य दैनिक शब्द / other everyday nouns)
+    LessonItem(primary: '名前 (なまえ)', romaji: 'Namae', meaning: 'नाम', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '歳/才 (さい)', romaji: 'Sai', meaning: 'उमेर (काउन्टर)', note: '助数詞 (संज्ञा) — 二十歳 (बीस वर्ष)'),
+    LessonItem(primary: '誕生日 (たんじょうび)', romaji: 'Tanjoubi', meaning: 'जन्मदिन', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '約束 (やくそく)', romaji: 'Yakusoku', meaning: 'वाचा / भेट्ने समय तय गर्नु', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '番号 (ばんごう)', romaji: 'Bangou', meaning: 'नम्बर', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '住所 (じゅうしょ)', romaji: 'Juusho', meaning: 'ठेगाना', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '意味 (いみ)', romaji: 'Imi', meaning: 'अर्थ', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '質問 (しつもん)', romaji: 'Shitsumon', meaning: 'प्रश्न', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '答え (こたえ)', romaji: 'Kotae', meaning: 'जवाफ', note: '名詞 (संज्ञा) — 動詞形: 答える'),
+    LessonItem(primary: '問題 (もんだい)', romaji: 'Mondai', meaning: 'समस्या / प्रश्न (परीक्षाको)', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '旅行 (りょこう)', romaji: 'Ryokou', meaning: 'यात्रा/घुम्न जानु', note: '名詞 (संज्ञा) — 旅行する = यात्रा गर्नु'),
+    LessonItem(primary: '荷物 (にもつ)', romaji: 'Nimotsu', meaning: 'सामान/लगेज', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '休み (やすみ)', romaji: 'Yasumi', meaning: 'बिदा', note: '名詞 (संज्ञा)'),
+
+    // 動詞 (क्रिया / more verbs)
+    LessonItem(primary: '開く (あく)', romaji: 'Aku', meaning: 'खुल्नु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 開きます — 自動詞(「開ける」の対)'),
+    LessonItem(primary: '閉まる (しまる)', romaji: 'Shimaru', meaning: 'बन्द हुनु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 閉まります — 自動詞(「閉める」の対)'),
+    LessonItem(
+      primary: '切る (きる)',
+      romaji: 'Kiru',
+      meaning: 'काट्नु',
+      note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 切ります — 「着る(きる)」と発音同じ、意味が違う',
+    ),
+    LessonItem(primary: '動く (うごく)', romaji: 'Ugoku', meaning: 'चल्नु / हल्लिनु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 動きます'),
+    LessonItem(primary: '止まる (とまる)', romaji: 'Tomaru', meaning: 'रोकिनु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 止まります'),
+    LessonItem(primary: '変える (かえる)', romaji: 'Kaeru', meaning: 'परिवर्तन गर्नु', note: '動詞 (क्रिया)・グループ2(る-verb) / ます形: 変えます — 他動詞'),
+    LessonItem(primary: '変わる (かわる)', romaji: 'Kawaru', meaning: 'परिवर्तन हुनु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 変わります — 自動詞'),
+    LessonItem(primary: '答える (こたえる)', romaji: 'Kotaeru', meaning: 'जवाफ दिनु', note: '動詞 (क्रिया)・グループ2(る-verb) / ます形: 答えます'),
+    LessonItem(primary: '聞こえる (きこえる)', romaji: 'Kikoeru', meaning: 'सुनिनु', note: '動詞 (क्रिया)・グループ2(る-verb) / ます形: 聞こえます'),
+    LessonItem(primary: '見える (みえる)', romaji: 'Mieru', meaning: 'देखिनु', note: '動詞 (क्रिया)・グループ2(る-verb) / ます形: 見えます'),
+    LessonItem(primary: '覚える (おぼえる)', romaji: 'Oboeru', meaning: 'सम्झनु / याद गर्नु', note: '動詞 (क्रिया)・グループ2(る-verb) / ます形: 覚えます'),
+    LessonItem(primary: '直す (なおす)', romaji: 'Naosu', meaning: 'मर्मत गर्नु / सुधार्नु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 直します'),
+    LessonItem(primary: '壊れる (こわれる)', romaji: 'Kowareru', meaning: 'बिग्रिनु', note: '動詞 (क्रिया)・グループ2(る-verb) / ます形: 壊れます'),
+    LessonItem(primary: '決める (きめる)', romaji: 'Kimeru', meaning: 'निर्णय गर्नु', note: '動詞 (क्रिया)・グループ2(る-verb) / ます形: 決めます'),
+    LessonItem(primary: '選ぶ (えらぶ)', romaji: 'Erabu', meaning: 'छान्नु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 選びます'),
+    LessonItem(primary: '比べる (くらべる)', romaji: 'Kuraberu', meaning: 'तुलना गर्नु', note: '動詞 (क्रिया)・グループ2(る-verb) / ます形: 比べます'),
+    LessonItem(primary: '探す (さがす)', romaji: 'Sagasu', meaning: 'खोज्नु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 探します'),
+    LessonItem(primary: '見つける (みつける)', romaji: 'Mitsukeru', meaning: 'फेला पार्नु', note: '動詞 (क्रिया)・グループ2(る-verb) / ます形: 見つけます'),
+    LessonItem(primary: '遊ぶ (あそぶ)', romaji: 'Asobu', meaning: 'खेल्नु / रमाइलो गर्नु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 遊びます'),
+    LessonItem(primary: '間に合う (まにあう)', romaji: 'Maniau', meaning: 'समयमा पुग्नु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 間に合います'),
+    LessonItem(
+      primary: '着る (きる)',
+      romaji: 'Kiru',
+      meaning: 'लगाउनु (लुगा)',
+      note: '動詞 (क्रिया)・グループ2(る-verb) / ます形: 着ます — 「切る(きる)」と発音同じ、意味が違う',
+    ),
+    LessonItem(primary: '脱ぐ (ぬぐ)', romaji: 'Nugu', meaning: 'फुकाल्नु (लुगा)', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 脱ぎます'),
+    LessonItem(primary: '磨く (みがく)', romaji: 'Migaku', meaning: 'माझ्नु / ब्रस गर्नु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 磨きます — 歯を磨く (दाँत माझ्नु)'),
+
+    // 形容詞 (विशेषण / more adjectives)
+    LessonItem(primary: '楽しい (たのしい)', romaji: 'Tanoshii', meaning: 'रमाइलो', note: 'い形容詞 (विशेषण)'),
+    LessonItem(primary: '悲しい (かなしい)', romaji: 'Kanashii', meaning: 'दुखी', note: 'い形容詞 (विशेषण)'),
+    LessonItem(primary: '怖い (こわい)', romaji: 'Kowai', meaning: 'डरलाग्दो', note: 'い形容詞 (विशेषण)'),
+    LessonItem(primary: '痛い (いたい)', romaji: 'Itai', meaning: 'दुख्ने / पीडादायी', note: 'い形容詞 (विशेषण)'),
+    LessonItem(primary: '眠い (ねむい)', romaji: 'Nemui', meaning: 'निद्रा लागेको', note: 'い形容詞 (विशेषण)'),
+    LessonItem(primary: '危ない (あぶない)', romaji: 'Abunai', meaning: 'खतरनाक', note: 'い形容詞 (विशेषण)'),
+    LessonItem(primary: '大切 (たいせつ)', romaji: 'Taisetsu', meaning: 'महत्त्वपूर्ण', note: 'な形容詞 (विशेषण)'),
+    LessonItem(primary: '大丈夫 (だいじょうぶ)', romaji: 'Daijoubu', meaning: 'ठीक छ / समस्या छैन', note: 'な形容詞 (विशेषण)'),
+    LessonItem(primary: '暇 (ひま)', romaji: 'Hima', meaning: 'फुर्सद भएको', note: 'な形容詞 (विशेषण)'),
+    LessonItem(primary: '必要 (ひつよう)', romaji: 'Hitsuyou', meaning: 'आवश्यक', note: 'な形容詞 (विशेषण)'),
   ],
 };
 
