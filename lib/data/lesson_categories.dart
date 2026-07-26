@@ -19,6 +19,8 @@ class LessonCategory {
 }
 
 const List<LessonCategory> lessonCategories = [
+  LessonCategory(id: 'hiragana', icon: Icons.spellcheck_outlined, jpLabel: 'ひらがな', neLabel: 'हिरागाना (जापानी वर्णमाला)', subtitle: '基本の発音(あ〜ん・濁音・半濁音)'),
+  LessonCategory(id: 'katakana', icon: Icons.text_fields_outlined, jpLabel: 'カタカナ', neLabel: 'काताकाना (जापानी वर्णमाला)', subtitle: '基本の発音(ア〜ン・濁音・半濁音)'),
   LessonCategory(id: 'greetings', icon: Icons.emoji_people_outlined, jpLabel: 'あいさつと自己紹介', neLabel: 'अभिवादन र परिचय', subtitle: 'あいさつ・名前・自己紹介'),
   LessonCategory(id: 'emergency_phrases', icon: Icons.sos_outlined, jpLabel: '困ったときのひとこと', neLabel: 'अप्ठ्यारोमा प्रयोग हुने शब्द ', subtitle: '助けを求める・聞き返す'),
   LessonCategory(id: 'numbers_money', icon: Icons.payments_outlined, jpLabel: '数字・お金の数え方', neLabel: 'अंक र पैसा', subtitle: '値段・支払い'),
