@@ -10,22 +10,41 @@ window.NepaliDictOcr = (function () {
   let kuroshiroInstance = null;
   let kuroshiroReadyPromise = null;
 
+  // A stuck OCR/conversion call previously looked like the app "freezing"
+  // (no error, no way out). Every slow step below is bounded so it always
+  // resolves to either a result or a clear error.
+  function withTimeout(promise, ms, label) {
+    return Promise.race([
+      promise,
+      new Promise((_, reject) =>
+        setTimeout(() => reject(new Error(`${label} timed out after ${ms / 1000}s`)), ms)
+      ),
+    ]);
+  }
+
   function ensureKuroshiro() {
     if (!kuroshiroReadyPromise) {
-      kuroshiroReadyPromise = (async () => {
-        const analyzer = new KuromojiAnalyzer({
-          dictPath: 'https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict/',
-        });
-        const k = new Kuroshiro();
-        await k.init(analyzer);
-        kuroshiroInstance = k;
-      })();
+      kuroshiroReadyPromise = withTimeout(
+        (async () => {
+          const analyzer = new KuromojiAnalyzer({
+            dictPath: 'https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict/',
+          });
+          const k = new Kuroshiro();
+          await k.init(analyzer);
+          kuroshiroInstance = k;
+        })(),
+        30000,
+        'kuroshiro init'
+      ).catch((e) => {
+        kuroshiroReadyPromise = null; // allow retrying on the next photo
+        throw e;
+      });
     }
     return kuroshiroReadyPromise;
   }
 
   async function recognizeAndRomanize(imageDataUrl) {
-    const result = await Tesseract.recognize(imageDataUrl, 'jpn');
+    const result = await withTimeout(Tesseract.recognize(imageDataUrl, 'jpn'), 45000, 'OCR');
     const japanese = (result.data.text || '').trim();
 
     let romaji = '';
@@ -44,17 +63,25 @@ window.NepaliDictOcr = (function () {
         // the input itself (e.g. garbled OCR output) is the problem, not
         // the romaji conversion specifically.
         try {
-          hiragana = await kuroshiroInstance.convert(japanese, { to: 'hiragana', mode: 'normal' });
+          hiragana = await withTimeout(
+            kuroshiroInstance.convert(japanese, { to: 'hiragana', mode: 'normal' }),
+            15000,
+            'hiragana convert'
+          );
         } catch (e) {
           romajiError = 'hiragana convert: ' + String((e && e.message) || e);
         }
 
         try {
-          romaji = await kuroshiroInstance.convert(japanese, {
-            to: 'romaji',
-            mode: 'spaced',
-            romajiSystem: 'hepburn',
-          });
+          romaji = await withTimeout(
+            kuroshiroInstance.convert(japanese, {
+              to: 'romaji',
+              mode: 'spaced',
+              romajiSystem: 'hepburn',
+            }),
+            15000,
+            'romaji convert'
+          );
         } catch (e) {
           const msg = 'romaji convert: ' + String((e && e.message) || e);
           romajiError = romajiError ? romajiError + ' | ' + msg : msg;
