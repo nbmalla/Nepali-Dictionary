@@ -1874,6 +1874,74 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
     LessonItem(primary: '大丈夫 (だいじょうぶ)', romaji: 'Daijoubu', meaning: 'ठीक छ / समस्या छैन', note: 'な形容詞 (विशेषण)'),
     LessonItem(primary: '暇 (ひま)', romaji: 'Hima', meaning: 'फुर्सद भएको', note: 'な形容詞 (विशेषण)'),
     LessonItem(primary: '必要 (ひつよう)', romaji: 'Hitsuyou', meaning: 'आवश्यक', note: 'な形容詞 (विशेषण)'),
+
+    // 副詞 (क्रियाविशेषण / more adverbs)
+    LessonItem(primary: 'いつも', romaji: 'Itsumo', meaning: 'सधैं', note: '副詞 (क्रियाविशेषण)'),
+    LessonItem(primary: 'よく', romaji: 'Yoku', meaning: 'प्रायः / राम्ररी', note: '副詞 (क्रियाविशेषण)'),
+    LessonItem(primary: 'たまに', romaji: 'Tamani', meaning: 'कहिलेकाहीं', note: '副詞 (क्रियाविशेषण)'),
+    LessonItem(primary: 'あまり', romaji: 'Amari', meaning: 'खासै (होइन)', note: '副詞 (क्रियाविशेषण) — पछाडि नकारात्मक (〜ない) आउँछ'),
+    LessonItem(primary: 'ぜんぜん', romaji: 'Zenzen', meaning: 'बिल्कुलै (होइन)', note: '副詞 (क्रियाविशेषण) — पछाडि नकारात्मक (〜ない) आउँछ'),
+    LessonItem(primary: 'もう', romaji: 'Mou', meaning: 'पहिले नै / अब', note: '副詞 (क्रियाविशेषण)'),
+    LessonItem(primary: 'まだ', romaji: 'Mada', meaning: 'अझै / अझै पनि', note: '副詞 (क्रियाविशेषण)'),
+    LessonItem(primary: 'すぐ', romaji: 'Sugu', meaning: 'चाँडै / तुरुन्तै', note: '副詞 (क्रियाविशेषण)'),
+    LessonItem(primary: 'ゆっくり', romaji: 'Yukkuri', meaning: 'बिस्तारै', note: '副詞 (क्रियाविशेषण)'),
+    LessonItem(primary: 'たくさん', romaji: 'Takusan', meaning: 'धेरै (परिमाणमा)', note: '副詞・名詞 (क्रियाविशेषण/संज्ञा)'),
+
+    // 年月の言葉 (महिना/वर्षका शब्द / month & year words)
+    LessonItem(primary: '午前 (ごぜん)', romaji: 'Gozen', meaning: 'बिहान (AM)', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '午後 (ごご)', romaji: 'Gogo', meaning: 'बेलुका (PM)', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '先月 (せんげつ)', romaji: 'Sengetsu', meaning: 'गएको महिना', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '来月 (らいげつ)', romaji: 'Raigetsu', meaning: 'अर्को महिना', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '今月 (こんげつ)', romaji: 'Kongetsu', meaning: 'यो महिना', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '去年 (きょねん)', romaji: 'Kyonen', meaning: 'गएको वर्ष', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '来年 (らいねん)', romaji: 'Rainen', meaning: 'अर्को वर्ष', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '今年 (ことし)', romaji: 'Kotoshi', meaning: 'यो वर्ष', note: '名詞 (संज्ञा)'),
+
+    // 家族 (अरूको परिवार / others' family — honorific forms)
+    LessonItem(primary: 'お兄さん (おにいさん)', romaji: 'Oniisan', meaning: 'दाजु (अरूको/सम्मानित)', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: 'お姉さん (おねえさん)', romaji: 'Oneesan', meaning: 'दिदी (अरूको/सम्मानित)', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '奥さん (おくさん)', romaji: 'Okusan', meaning: 'श्रीमती (अरूको)', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: 'ご主人 (ごしゅじん)', romaji: 'Goshujin', meaning: 'श्रीमान (अरूको)', note: '名詞 (संज्ञा)'),
+
+    // 通信・電子機器 (सञ्चार/इलेक्ट्रोनिक्स / communication & electronics)
+    LessonItem(primary: '電話 (でんわ)', romaji: 'Denwa', meaning: 'फोन', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '携帯電話 (けいたいでんわ)', romaji: 'Keitai denwa', meaning: 'मोबाइल फोन', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: 'メール', romaji: 'Meeru', meaning: 'इमेल', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: 'インターネット', romaji: 'Intaanetto', meaning: 'इन्टरनेट', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: 'ビル', romaji: 'Biru', meaning: 'भवन (ठूलो)', note: '名詞 (संज्ञा)'),
+
+    // その他名詞 (अन्य / a few more common nouns)
+    LessonItem(primary: 'お金 (おかね)', romaji: 'Okane', meaning: 'पैसा', note: '名詞 (संज्ञा)'),
+    LessonItem(primary: '趣味 (しゅみ)', romaji: 'Shumi', meaning: 'शौक', note: '名詞 (संज्ञा)'),
+
+    // 動詞 (क्रिया / more verbs)
+    LessonItem(primary: '頑張る (がんばる)', romaji: 'Ganbaru', meaning: 'मेहनत गर्नु / कोसिस गर्नु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 頑張ります'),
+    LessonItem(
+      primary: '泊まる (とまる)',
+      romaji: 'Tomaru',
+      meaning: 'बास बस्नु',
+      note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 泊まります — 「止まる(とまる)」と発音同じ、意味が違う',
+    ),
+    LessonItem(primary: '集める (あつめる)', romaji: 'Atsumeru', meaning: 'जम्मा गर्नु', note: '動詞 (क्रिया)・グループ2(る-verb) / ます形: 集めます — 他動詞'),
+    LessonItem(primary: '集まる (あつまる)', romaji: 'Atsumaru', meaning: 'जम्मा हुनु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 集まります — 自動詞'),
+    LessonItem(primary: '落ちる (おちる)', romaji: 'Ochiru', meaning: 'खस्नु', note: '動詞 (क्रिया)・グループ2(る-verb) / ます形: 落ちます — 自動詞'),
+    LessonItem(primary: '落とす (おとす)', romaji: 'Otosu', meaning: 'खसाल्नु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 落とします — 他動詞'),
+    LessonItem(primary: '拾う (ひろう)', romaji: 'Hirou', meaning: 'टिप्नु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 拾います'),
+    LessonItem(primary: '触る (さわる)', romaji: 'Sawaru', meaning: 'छुनु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 触ります'),
+    LessonItem(primary: '取る (とる)', romaji: 'Toru', meaning: 'लिनु / समाउनु', note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 取ります'),
+    LessonItem(
+      primary: '撮る (とる)',
+      romaji: 'Toru',
+      meaning: 'फोटो खिच्नु',
+      note: '動詞 (क्रिया)・グループ1(う-verb) / ます形: 撮ります — 「取る(とる)」と発音同じ、意味が違う',
+    ),
+
+    // 接続詞 (जोड्ने शब्द / conjunctions)
+    LessonItem(primary: 'そして', romaji: 'Soshite', meaning: 'अनि / त्यसपछि', note: '接続詞'),
+    LessonItem(primary: 'それから', romaji: 'Sorekara', meaning: 'त्यसपछि', note: '接続詞'),
+    LessonItem(primary: 'でも', romaji: 'Demo', meaning: 'तर', note: '接続詞'),
+    LessonItem(primary: 'だから', romaji: 'Dakara', meaning: 'त्यसैले', note: '接続詞'),
+    LessonItem(primary: 'しかし', romaji: 'Shikashi', meaning: 'तर / तथापि (औपचारिक)', note: '接続詞'),
   ],
 };
 
