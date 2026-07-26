@@ -32,7 +32,15 @@ class _OcrReaderScreenState extends State<OcrReaderScreen> {
   Future<void> _pick(ImageSource source) async {
     XFile? file;
     try {
-      file = await _picker.pickImage(source: source, imageQuality: 85);
+      // Downscale before OCR: a full-resolution phone photo can take Tesseract
+      // a very long time (or exhaust memory) to process in the browser, which
+      // reads as the app "freezing".
+      file = await _picker.pickImage(
+        source: source,
+        imageQuality: 85,
+        maxWidth: 1600,
+        maxHeight: 1600,
+      );
     } catch (e) {
       setState(() => _error = '画像を取得できませんでした / फोटो लिन सकिएन: $e');
       return;
@@ -85,9 +93,10 @@ class _OcrReaderScreenState extends State<OcrReaderScreen> {
                 borderRadius: BorderRadius.circular(16),
               ),
               child: Text(
-                '看板やメニューの漢字を撮影すると、読み方(ローマ字)を表示します。\n'
+                '看板やメニューなど、印刷された漢字を撮影すると読み方(ローマ字)を表示します。\n'
                 'फोटो खिचेर जापानी अक्षर (कान्जी) को उच्चारण (रोमाजी) हेर्नुहोस्।\n'
-                '※無料のOCRを使っているため、認識精度には限界があります。',
+                '※無料のOCRを使っているため、認識精度には限界があります。手書き文字には対応していません。\n'
+                '※ह्यान्डराइटिङ (हस्तलिखित अक्षर) मा काम गर्दैन — छापिएको अक्षरमा मात्र प्रयोग गर्नुहोस्।',
                 style: theme.textTheme.bodySmall,
               ),
             ),
