@@ -85591,7 +85591,7 @@ A.KI.prototype={
 I(a){return A.eD($.ll(),new A.a8s(),null)}}
 A.a8s.prototype={
 $2(a,b){var s=null
-return new A.oL(B.a31,new A.a8r(),"Nep Dictionary",A.q_(s,A.atE(B.ak,s,s,B.Ds),!0),A.q_(s,A.atE(B.y,s,s,B.Dw),!0),!1,s)},
+return new A.oL(B.a31,new A.a8r(),"Japanese for Nepali",A.q_(s,A.atE(B.ak,s,s,B.Ds),!0),A.q_(s,A.atE(B.y,s,s,B.Dw),!0),!1,s)},
 $S:528}
 A.a8r.prototype={
 $2(a,b){var s=A.bu(a,null,t.w).w.GV(new A.fG($.ll().b))
@@ -85798,7 +85798,7 @@ return r[B.j.bB(B.j.f1(new A.fO(Date.now(),0,!1).f4(A.aHp(A.azF(new A.fO(Date.no
 aE(){this.aU()
 $.e8().js()},
 I(a){var s=this.gah2(),r=A.io(B.bH,0,A.ni(6,"count",t.S),t.uM).ez(0),q=A.G(a).ax.a===B.y?B.aK:B.aJ
-return A.kD(A.lo(null,A.G(a).ax.a===B.y?B.aK:B.aJ,B.aaq),q,A.mq(!0,A.eD($.e8(),new A.ajC(s,r),null),!1,B.au,!0),null)}}
+return A.kD(A.lo(null,A.G(a).ax.a===B.y?B.aK:B.aJ,B.aat),q,A.mq(!0,A.eD($.e8(),new A.ajC(s,r),null),!1,B.au,!0),null)}}
 A.ajw.prototype={
 $1(a){return a.a===B.b},
 $S:46}
@@ -86041,7 +86041,7 @@ if(o!=null)B.c.O(m,A.d([B.lp,A.rP(r,r,B.kk,r,r,o,r,r,r)],n))
 return A.eV(r,A.dX(m,B.Z,B.kG,B.Y),B.A,B.AV,new A.cH(s.e,r,r,p,r,r,B.at),r,r,r,B.EU,r,r,1/0)}}
 A.US.prototype={
 I(a){var s=null,r=A.b2("\u304a\u75b2\u308c\u3055\u307e\u3067\u3057\u305f\uff01",s,s,s,A.G(a).ok.f,s,s),q=this.d
-return A.hU(A.dX(A.d([B.Gt,B.lp,r,B.dT,A.b2(q===0?"\u5bfe\u8c61\u306e\u30d5\u30ec\u30fc\u30ba\u304c\u3042\u308a\u307e\u305b\u3093\u3067\u3057\u305f":""+q+" \u679a\u4e2d "+this.c+" \u679a \u308f\u304b\u3063\u305f",s,s,s,s,s,s),B.lq,A.ay9(B.aas,new A.apO(a))],t.p),B.Z,B.H,B.bK),s,s)}}
+return A.hU(A.dX(A.d([B.Gt,B.lp,r,B.dT,A.b2(q===0?"\u5bfe\u8c61\u306e\u30d5\u30ec\u30fc\u30ba\u304c\u3042\u308a\u307e\u305b\u3093\u3067\u3057\u305f":""+q+" \u679a\u4e2d "+this.c+" \u679a \u308f\u304b\u3063\u305f",s,s,s,s,s,s),B.lq,A.ay9(B.aar,new A.apO(a))],t.p),B.Z,B.H,B.bK),s,s)}}
 A.apO.prototype={
 $0(){return A.hw(this.a).ek()},
 $S:0}
@@ -86109,7 +86109,7 @@ for(q=J.bp(n),m=o+"::",l=0;l<q.gF(n);++l){k=q.h(n,l)
 if(k.a===B.b&&!$.e8().a.n(0,m+l))j.push(new A.tx(o,l,k))}}return j},
 acK(){return this.Ps(null)},
 I(a){var s=A.G(a).ax.a===B.y?B.aK:B.aJ
-return A.kD(A.lo(null,A.G(a).ax.a===B.y?B.aK:B.aJ,B.aat),s,A.mq(!0,A.eD($.e8(),new A.abh(this),null),!1,B.au,!0),null)}}
+return A.kD(A.lo(null,A.G(a).ax.a===B.y?B.aK:B.aJ,B.aas),s,A.mq(!0,A.eD($.e8(),new A.abh(this),null),!1,B.au,!0),null)}}
 A.abh.prototype={
 $2(a,b){var s,r,q,p,o,n=null,m=this.a,l=m.acK(),k=A.G(a),j=k.ax,i=j.d
 j=i==null?j.b:i
@@ -90953,8 +90953,8 @@ B.lH=new A.js(0,"japanese")
 B.aaj=new A.d8("JA",null,null,null,null,null,null,null,null)
 B.B3=new A.jR(B.lH,B.aaj,t.wm)
 B.ik=new A.js(1,"nepali")
-B.aar=new A.d8("NE",null,null,null,null,null,null,null,null)
-B.B2=new A.jR(B.ik,B.aar,t.wm)
+B.aaq=new A.d8("NE",null,null,null,null,null,null,null,null)
+B.B2=new A.jR(B.ik,B.aaq,t.wm)
 B.Yc=s([B.B3,B.B2],A.an("B<jR<js>>"))
 B.SM=new A.b(B.b,"\u982d\u304c\u75db\u3044\u3067\u3059","Atama ga itai desu","\u091f\u093e\u0909\u0915\u094b \u0926\u0941\u0916\u094d\u092f\u094b",null)
 B.SA=new A.b(B.b,"\u304a\u8179\u304c\u75db\u3044\u3067\u3059","Onaka ga itai desu","\u092a\u0947\u091f \u0926\u0941\u0916\u094d\u092f\u094b",null)
@@ -93483,9 +93483,9 @@ B.aam=new A.d8("\u308f\u304b\u3063\u305f",null,null,null,null,null,null,null,nul
 B.aan=new A.d8("\u6587\u5b57\u30b5\u30a4\u30ba",null,null,null,null,null,null,null,null)
 B.aao=new A.d8("UI\u8a00\u8a9e",null,null,null,null,null,null,null,null)
 B.aap=new A.d8("\u5b66\u3076",null,null,null,null,null,null,null,null)
-B.aaq=new A.d8("Nep Dictionary",null,null,null,null,null,null,null,null)
-B.aas=new A.d8("\u623b\u308b",null,null,null,null,null,null,null,null)
-B.aat=new A.d8("\u3075\u304f\u3057\u3085\u3046",null,null,null,null,null,null,null,null)
+B.aar=new A.d8("\u623b\u308b",null,null,null,null,null,null,null,null)
+B.aas=new A.d8("\u3075\u304f\u3057\u3085\u3046",null,null,null,null,null,null,null,null)
+B.aat=new A.d8("Japanese for Nepali",null,null,null,null,null,null,null,null)
 B.adU=new A.ag7(0,"system")
 B.a19=new A.i(0.056,0.024)
 B.a1n=new A.i(0.108,0.3085)
