@@ -19,7 +19,7 @@ class NepDictionaryApp extends StatelessWidget {
       animation: AppSettings.instance,
       builder: (context, _) {
         return MaterialApp(
-          title: 'Nep Dictionary',
+          title: 'Japanese for Nepali',
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
             colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF2F5CA6)),

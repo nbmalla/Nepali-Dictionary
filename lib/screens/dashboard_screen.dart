@@ -42,7 +42,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
       backgroundColor: AppColors.pageBackground(context),
       appBar: AppBar(
         backgroundColor: AppColors.pageBackground(context),
-        title: const Text('Nep Dictionary'),
+        title: const Text('Japanese for Nepali'),
       ),
       body: SafeArea(
         child: AnimatedBuilder(

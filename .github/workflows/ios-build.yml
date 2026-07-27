@@ -1,0 +1,24 @@
+name: iOS Build Check
+
+# Manual-trigger only for now: this verifies the iOS target still compiles
+# (using GitHub's hosted macOS runner, since no Mac is available for local
+# development). It produces an unsigned build artifact only — it does not
+# sign the app or upload to TestFlight/App Store Connect. Once code signing
+# certificates and a provisioning profile are ready (as GitHub Secrets),
+# this workflow can be extended to produce a signed IPA and upload it.
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+
+      - run: flutter pub get
+
+      - run: flutter build ios --release --no-codesign
