@@ -51,4 +51,8 @@ const List<LessonCategory> lessonCategories = [
   LessonCategory(id: 'jlpt_n5_verbs', icon: Icons.directions_run_outlined, jpLabel: 'JLPT N5 語彙:動詞', neLabel: 'JLPT N5 शब्दावली: क्रिया', subtitle: 'グループ1・2・3の動詞'),
   LessonCategory(id: 'jlpt_n5_adjectives', icon: Icons.palette_outlined, jpLabel: 'JLPT N5 語彙:形容詞', neLabel: 'JLPT N5 शब्दावली: विशेषण', subtitle: 'い形容詞・な形容詞'),
   LessonCategory(id: 'jlpt_n5_other', icon: Icons.help_outline, jpLabel: 'JLPT N5 語彙:代名詞・副詞など', neLabel: 'JLPT N5 शब्दावली: सर्वनाम/क्रियाविशेषण आदि', subtitle: '代名詞・副詞・接続詞・疑問詞'),
+  LessonCategory(id: 'jlpt_n4_nouns', icon: Icons.label_important_outline, jpLabel: 'JLPT N4 語彙:名詞', neLabel: 'JLPT N4 शब्दावली: संज्ञा', subtitle: '抽象的な名詞・社会/自然の言葉'),
+  LessonCategory(id: 'jlpt_n4_verbs', icon: Icons.directions_run, jpLabel: 'JLPT N4 語彙:動詞', neLabel: 'JLPT N4 शब्दावली: क्रिया', subtitle: 'グループ1・2・3の動詞'),
+  LessonCategory(id: 'jlpt_n4_adjectives', icon: Icons.palette, jpLabel: 'JLPT N4 語彙:形容詞', neLabel: 'JLPT N4 शब्दावली: विशेषण', subtitle: 'い形容詞・な形容詞'),
+  LessonCategory(id: 'jlpt_n4_other', icon: Icons.help, jpLabel: 'JLPT N4 語彙:副詞・接続詞など', neLabel: 'JLPT N4 शब्दावली: क्रियाविशेषण/संयोजक आदि', subtitle: '副詞・接続詞'),
 ];
