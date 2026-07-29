@@ -65,4 +65,8 @@ const List<LessonCategory> lessonCategories = [
   LessonCategory(id: 'jlpt_n4_fill_blank', icon: Icons.edit_note_outlined, jpLabel: 'JLPT N4 穴埋め問題①基礎', neLabel: 'JLPT N4 रिक्तस्थान अभ्यास ① आधारभूत', subtitle: '1つの文法パターンずつ確認'),
   LessonCategory(id: 'jlpt_n4_fill_blank_2', icon: Icons.edit_note, jpLabel: 'JLPT N4 穴埋め問題②応用', neLabel: 'JLPT N4 रिक्तस्थान अभ्यास ② प्रयोगात्मक', subtitle: '似た文法の使い分け(たら・ば・と・なら 等)'),
   LessonCategory(id: 'jlpt_n4_fill_blank_3', icon: Icons.workspace_premium_outlined, jpLabel: 'JLPT N4 穴埋め問題③発展', neLabel: 'JLPT N4 रिक्तस्थान अभ्यास ③ उन्नत', subtitle: 'N4〜N3境界レベルの文法'),
+  LessonCategory(id: 'jlpt_n4_kanji_people_work', icon: Icons.numbers, jpLabel: 'JLPT N4 漢字:体・人・仕事', neLabel: 'JLPT N4 कान्जी: शरीर/मानिस/काम', subtitle: '読み方(音読み・訓読み)+例'),
+  LessonCategory(id: 'jlpt_n4_kanji_action_move', icon: Icons.people_alt_outlined, jpLabel: 'JLPT N4 漢字:動作・移動', neLabel: 'JLPT N4 कान्जी: क्रिया/चलचल', subtitle: '読み方(音読み・訓読み)+例'),
+  LessonCategory(id: 'jlpt_n4_kanji_society', icon: Icons.terrain_outlined, jpLabel: 'JLPT N4 漢字:社会・制度', neLabel: 'JLPT N4 कान्जी: समाज/प्रणाली', subtitle: '読み方(音読み・訓読み)+例'),
+  LessonCategory(id: 'jlpt_n4_kanji_economy', icon: Icons.style_outlined, jpLabel: 'JLPT N4 漢字:経済・記録・時間', neLabel: 'JLPT N4 कान्जी: अर्थतन्त्र/अभिलेख/समय', subtitle: '読み方(音読み・訓読み)+例'),
 ];
