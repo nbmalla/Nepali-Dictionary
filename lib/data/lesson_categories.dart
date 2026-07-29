@@ -56,5 +56,7 @@ const List<LessonCategory> lessonCategories = [
   LessonCategory(id: 'jlpt_n4_adjectives', icon: Icons.palette, jpLabel: 'JLPT N4 語彙:形容詞', neLabel: 'JLPT N4 शब्दावली: विशेषण', subtitle: 'い形容詞・な形容詞'),
   LessonCategory(id: 'jlpt_n4_other', icon: Icons.help, jpLabel: 'JLPT N4 語彙:副詞・接続詞など', neLabel: 'JLPT N4 शब्दावली: क्रियाविशेषण/संयोजक आदि', subtitle: '副詞・接続詞'),
   LessonCategory(id: 'jlpt_n4_grammar', icon: Icons.rule_outlined, jpLabel: 'JLPT N4 文法', neLabel: 'JLPT N4 व्याकरण', subtitle: '文の作り方(パターン+例文)'),
-  LessonCategory(id: 'jlpt_n4_fill_blank', icon: Icons.edit_note_outlined, jpLabel: 'JLPT N4 穴埋め問題', neLabel: 'JLPT N4 रिक्तस्थान भर्ने अभ्यास', subtitle: '文法の実践問題'),
+  LessonCategory(id: 'jlpt_n4_fill_blank', icon: Icons.edit_note_outlined, jpLabel: 'JLPT N4 穴埋め問題①基礎', neLabel: 'JLPT N4 रिक्तस्थान अभ्यास ① आधारभूत', subtitle: '1つの文法パターンずつ確認'),
+  LessonCategory(id: 'jlpt_n4_fill_blank_2', icon: Icons.edit_note, jpLabel: 'JLPT N4 穴埋め問題②応用', neLabel: 'JLPT N4 रिक्तस्थान अभ्यास ② प्रयोगात्मक', subtitle: '似た文法の使い分け(たら・ば・と・なら 等)'),
+  LessonCategory(id: 'jlpt_n4_fill_blank_3', icon: Icons.workspace_premium_outlined, jpLabel: 'JLPT N4 穴埋め問題③発展', neLabel: 'JLPT N4 रिक्तस्थान अभ्यास ③ उन्नत', subtitle: 'N4〜N3境界レベルの文法'),
 ];
