@@ -55,4 +55,6 @@ const List<LessonCategory> lessonCategories = [
   LessonCategory(id: 'jlpt_n4_verbs', icon: Icons.directions_run, jpLabel: 'JLPT N4 語彙:動詞', neLabel: 'JLPT N4 शब्दावली: क्रिया', subtitle: 'グループ1・2・3の動詞'),
   LessonCategory(id: 'jlpt_n4_adjectives', icon: Icons.palette, jpLabel: 'JLPT N4 語彙:形容詞', neLabel: 'JLPT N4 शब्दावली: विशेषण', subtitle: 'い形容詞・な形容詞'),
   LessonCategory(id: 'jlpt_n4_other', icon: Icons.help, jpLabel: 'JLPT N4 語彙:副詞・接続詞など', neLabel: 'JLPT N4 शब्दावली: क्रियाविशेषण/संयोजक आदि', subtitle: '副詞・接続詞'),
+  LessonCategory(id: 'jlpt_n4_grammar', icon: Icons.rule_outlined, jpLabel: 'JLPT N4 文法', neLabel: 'JLPT N4 व्याकरण', subtitle: '文の作り方(パターン+例文)'),
+  LessonCategory(id: 'jlpt_n4_fill_blank', icon: Icons.edit_note_outlined, jpLabel: 'JLPT N4 穴埋め問題', neLabel: 'JLPT N4 रिक्तस्थान भर्ने अभ्यास', subtitle: '文法の実践問題'),
 ];
