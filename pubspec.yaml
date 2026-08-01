@@ -84,6 +84,8 @@ flutter:
     - assets/audio/food_names/
     - assets/audio/greetings/
     - assets/audio/health/
+    - assets/audio/jlpt_n4_grammar/
+    - assets/audio/jlpt_n4_other/
     - assets/audio/job_interview/
     - assets/audio/manners/
     - assets/audio/meal_basics/
