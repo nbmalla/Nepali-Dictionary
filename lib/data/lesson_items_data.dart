@@ -1640,12 +1640,6 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
     LessonItem(primary: 'タクシー', romaji: 'Takushii', meaning: 'ट्याक्सी', note: '名詞 (संज्ञा)'),
     LessonItem(primary: '飛行機 (ひこうき)', romaji: 'Hikouki', meaning: 'हवाइजहाज', note: '名詞 (संज्ञा)'),
     LessonItem(primary: '道 (みち)', romaji: 'Michi', meaning: 'बाटो', note: '名詞 (संज्ञा)'),
-    LessonItem(primary: '一日 (ついたち)', romaji: 'Tsuitachi', meaning: '१ तारिख', note: '名詞 (संज्ञा) — 不規則な読み方'),
-    LessonItem(primary: '二日 (ふつか)', romaji: 'Futsuka', meaning: '२ तारिख', note: '名詞 (संज्ञा) — 不規則な読み方'),
-    LessonItem(primary: '三日 (みっか)', romaji: 'Mikka', meaning: '३ तारिख', note: '名詞 (संज्ञा) — 不規則な読み方'),
-    LessonItem(primary: '四日 (よっか)', romaji: 'Yokka', meaning: '४ तारिख', note: '名詞 (संज्ञा) — 不規則な読み方'),
-    LessonItem(primary: '五日 (いつか)', romaji: 'Itsuka', meaning: '५ तारिख', note: '名詞 (संज्ञा) — 不規則な読み方'),
-    LessonItem(primary: '六日 (むいか)', romaji: 'Muika', meaning: '६ तारिख', note: '名詞 (संज्ञा) — 不規則な読み方'),
 
     // 体・気持ち (शरीर/भावना / body & feelings — general terms)
     LessonItem(primary: '体 (からだ)', romaji: 'Karada', meaning: 'शरीर (सामान्य शब्द)', note: '名詞 (संज्ञा)'),
@@ -1671,6 +1665,12 @@ final Map<String, List<LessonItem>> lessonItemsByCategory = {
 
   // 27. JLPT N5 語彙: 名詞②(後半) -----------------------------------------
   'jlpt_n5_nouns_2': const [
+    LessonItem(primary: '一日 (ついたち)', romaji: 'Tsuitachi', meaning: '१ तारिख', note: '名詞 (संज्ञा) — 不規則な読み方'),
+    LessonItem(primary: '二日 (ふつか)', romaji: 'Futsuka', meaning: '२ तारिख', note: '名詞 (संज्ञा) — 不規則な読み方'),
+    LessonItem(primary: '三日 (みっか)', romaji: 'Mikka', meaning: '३ तारिख', note: '名詞 (संज्ञा) — 不規則な読み方'),
+    LessonItem(primary: '四日 (よっか)', romaji: 'Yokka', meaning: '४ तारिख', note: '名詞 (संज्ञा) — 不規則な読み方'),
+    LessonItem(primary: '五日 (いつか)', romaji: 'Itsuka', meaning: '५ तारिख', note: '名詞 (संज्ञा) — 不規則な読み方'),
+    LessonItem(primary: '六日 (むいか)', romaji: 'Muika', meaning: '६ तारिख', note: '名詞 (संज्ञा) — 不規則な読み方'),
     LessonItem(primary: '七日 (なのか)', romaji: 'Nanoka', meaning: '७ तारिख', note: '名詞 (संज्ञा) — 不規則な読み方'),
     LessonItem(primary: '八日 (ようか)', romaji: 'Youka', meaning: '८ तारिख', note: '名詞 (संज्ञा) — 不規則な読み方'),
     LessonItem(primary: '九日 (ここのか)', romaji: 'Kokonoka', meaning: '९ तारिख', note: '名詞 (संज्ञा) — 不規則な読み方'),
